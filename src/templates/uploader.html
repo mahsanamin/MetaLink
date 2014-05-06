@@ -1,0 +1,41 @@
+$def with (isError,result) 
+<html>
+<head>
+<script type=text/javascript>
+function checkValidation()
+{
+	var selectedFile = document.getElementById("userfile").value;
+	var enteredComment = document.getElementById("comment").value;
+	if(selectedFile == '')
+	{
+		document.getElementById("enter_comment").style.display = 'none';
+		document.getElementById("select_file").style.display = 'block';
+		return false;
+	}
+	else if(enteredComment == '')
+	{
+		document.getElementById("select_file").style.display = 'none';
+		document.getElementById("enter_comment").style.display = 'block';
+		return false;
+	}
+
+}
+</script>
+</head>
+  <body>
+  	<h1> UPLOAD FILE</h1>
+  	$if isError==0:
+ 		<p style="font-size:15px; color:green;">$result</p>
+	$else: 
+		<p style="font-size:15px; color:red;">$result</p>
+  	
+    <form enctype="multipart/form-data" action="/uploader" method="post" onsubmit = "return checkValidation()">
+      <div>File:    <input type = "file" name = "userfile" id = "userfile" /></div>
+      <div>Comment: <input type = "text" name = "comment" id = "comment" /></div>
+      <div><input type="submit" value="Submit" ></div>
+      
+      <div style="display:none" id = "select_file"> Please Select File</div>
+      <div style="display:none" id = "enter_comment"> Please enter Comment</div>
+    </form>
+  </body>
+</html>
