@@ -47,6 +47,7 @@ class UploadController:
             attachmentName =  'attachment; filename="%s" ' % (fileName)
             web.header('Content-Disposition',attachmentName)
             
+            return result
             
         except Exception, e:
             print "IN Excepetion"
@@ -56,7 +57,7 @@ class UploadController:
         finally:
             Util.deleteTempDir(tempDir)
         
-        return result
+        
         
         return renderer.uploader(0,result)
         
