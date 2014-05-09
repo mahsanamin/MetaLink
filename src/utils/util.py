@@ -16,6 +16,13 @@ from matplotlib.pyplot import switch_backend
 class Util():
     
     @staticmethod
+    def getDictValue(aDict,aKey,aDefaultVal=None):
+        if aDict.has_key(aKey):
+            return aDict[aKey]
+        else:
+            aDefaultVal
+        
+    @staticmethod
     def isEmptySheet(aWorkBook,sheetName):
         aSheet=aWorkBook.sheet_by_name(sheetName)
         if int(aSheet.nrows) == 0:
@@ -34,7 +41,8 @@ class Util():
    
    
     @staticmethod
-    def cellUnicodeVal(currSheet,row_index,col_index):
+    def cellVal(currSheet,row_index,col_index):
+        #supports unicoded
         cell_type = currSheet.cell_type(row_index, col_index) # rownum,colnum
         cell_value = currSheet.cell_value(row_index, col_index)
         
@@ -48,7 +56,7 @@ class Util():
         #first check the column is custom or system
         #trim/strip the column from both side... i.e there should be no space
         colName = colName.strip()
-        compiledRe = re.compile('[a-zA-Z0-9_]+[|][(][a-z]+[)]')
+        compiledRe = re.compile('(\w*)[|](\w+)[(][a-z]+[)]')
         returnVal = False
         if compiledRe.match(colName):
             returnVal = True
@@ -166,5 +174,17 @@ class Util():
         
         return result
     
+    @staticmethod
+    def getCastedValue(aValue,aTypeString):
+        if not aValue or aValue == "":
+            return None
+        if aTypeString.lower() == "int" :
+            return int(float(aValue))
+        elif aTypeString.lower() == "float" :
+            return float(aValue)
+        elif aTypeString.lower() == "long" :
+            return long(float(aValue))
+        else:
+            return aValue
 
         
