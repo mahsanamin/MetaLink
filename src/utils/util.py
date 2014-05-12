@@ -92,7 +92,7 @@ class Util():
     
     @staticmethod
     def dictToJson(finalDict):
-        j = json.dumps(finalDict)
+        j = json.dumps(finalDict,separators=(',', ':'))
         return j 
     
     @staticmethod

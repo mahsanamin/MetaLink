@@ -2,6 +2,9 @@ class Rules():
 
     metaSheetName = "meta"
     idColumnName = "_id"
+    keyName  = "key"
+    dataName = "data"
+    
     dataTypes   = {"int":1,"string":1,"float":1,"long":1}
     
     systemColumns = {idColumnName:   {"shortName":"id"   , "type":"int"},

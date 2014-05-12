@@ -156,6 +156,8 @@ class UploadController:
             colIndex = colIndex + 1
             
         mainDataDict = {}
+        dataDict = mainDataDict[Rules.dataName] = {}
+        
         for row_index in xrange(currSheet.nrows): 
             
             col = 0
@@ -163,7 +165,7 @@ class UploadController:
                 continue
             
             idKeyValue = long(float(Util.cellVal(currSheet, row_index, col))) # pick the 0th column value
-            currRow = mainDataDict[str(idKeyValue)] = {}
+            currRow = dataDict[str(idKeyValue)] = {}
             for column in arrColumns:
                 cellValue = Util.cellVal(currSheet, row_index, col+1)
                 
@@ -171,6 +173,13 @@ class UploadController:
                 if(cellValue):
                     currRow[column.fieldName] = cellValue 
                 col = col + 1
+        
+        
+        jsonForKey = Util.dictToJson(dataDict)
+        key = Util.getSh1OfStr(jsonForKey)
+        # do encryption here once done with other work
+        
+        mainDataDict[Rules.keyName] = key 
             
         return mainDataDict
             
