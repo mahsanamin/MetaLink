@@ -102,7 +102,7 @@ class UploadController:
         #verify field pattern first
         aRawColumn = aRawColumn.replace(" ","") # remove spaces for the column
         
-        print (aRawColumn)
+        print ("===>raw column is %s " %aRawColumn)
         columnStyleOk = Util.checkColumnNameStyle(aRawColumn)
         field = None
         if(columnStyleOk):
@@ -122,7 +122,9 @@ class UploadController:
                 raise Exception ("Field type is not valid...")
             
         else:
-            raise Exception("Column name  not valid " + str(aRawColumn))
+            # don't throw exception just ignore the column
+            #raise Exception("Column name  not valid " + str(aRawColumn))
+            None
         
         return field
         
@@ -139,9 +141,11 @@ class UploadController:
             
             field = None
             if(cellValue != Rules.idColumnName):
+                
                 field = self.extractField(cellValue)
                 if(not field):
-                    raise Exception ("something wrong with column %s " % (cellValue))
+                    print "Warnning --- Ignore column '%s'" % cellValue
+                    continue
                 
                 anyFieldAlready = Util.getDictValue(dictColumns, field.fieldName)
                 
