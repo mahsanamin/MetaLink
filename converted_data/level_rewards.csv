@@ -1,0 +1,6 @@
+id | (int),coins | coins (int),diamonds | dia (int),unit1_id | un1 (int),unit2_id | un2 (int),unit3_id | un3 (int),
+1,,,,,
+2,,,,,
+3,10000,,,,
+,,,,,
+,,,,,

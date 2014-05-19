@@ -5,64 +5,34 @@ import xlrd
 
 fname = '../level_stats.xlsx'
 book = xlrd.open_workbook(fname)
-sheet = book.sheet_by_name('Level Design')
+sheet = book.sheet_by_name('Mobs_Stage')
 
 # --------------------------------------------------
 #print sheet.nrows
 #print sheet.ncols
 
 # --------------------------------------------------
-ID_IDX = 1
-UNLOCK_LOCATION_ID_IDX = 2
-LOCATION_ID_IDX = 3
-PARENT_ZONE_ID_IDX = 4
-LEVEL_ID_IDX = 5
-NODE_ID_IDX = 6
-PARENT_ZONE_IDX = 7
-LEVEL_NODE_IDX = 8
-STAGE_NAME_IDX = 9
-DESCRIPTION_IDX = 10
-STAGE_DIALOGUE_GROUP_ID_IDX = 11
-EXP_IDX = 12
-MONEY_IDX = 13
-COST_STAMINA_IDX = 14
-MAX_BATTLEWAVE_COUNT_IDX = 15
-MAX_MOBS_BATTLEWAVE_IDX = 16
-NORMAL_MOB_GROUP_ID_IDX = 17
-MOB_LEVEL_DIFFICULTY_IDX = 18
-FINAL_BOSS_GROUP_ID_IDX = 19
-BOSS_LEVEL_DIFFICULTY_IDX = 20
-DUNGEON_LEVEL_VARIABLES_IDX = 21
-SPECIAL_BONUS_STAGE_GROUP_ID_IDX = 22
-SPECIAL_BONUS_STAGE_IDX = 23
-LOOT_ID_IDX = 24
+ID_IDX = 6
+RANDOM_LIST_IDX = 7
+MOB_ID_IDX = 9
+LEVEL_1_IDX = 10
+RATE_IDX = 13
+ENCOUNTER_RATE_IDX = 14
+MOB_SPEC_ATT_DEF_1_IDX = 15
+MOB_SPEC_ATT_DEF_2_IDX = 16
+MOB_SPEC_ATT_DEF_3_IDX = 17
 
 # --------------------------------------------------
 field_name_dict = {
     ID_IDX: 'id | (int)',
-    UNLOCK_LOCATION_ID_IDX: 'unlock_location_id | ulocid (int)',
-    LOCATION_ID_IDX: 'location_id | locid (int)',
-    PARENT_ZONE_ID_IDX: 'parent_zone_id | pzid (int)',
-    LEVEL_ID_IDX: 'level_id | lvid (int)',
-    NODE_ID_IDX: 'node_id | nid (int)',
-    PARENT_ZONE_IDX: 'parent_zone | pz (string)',
-    LEVEL_NODE_IDX: 'level_node | ln (string)',
-    STAGE_NAME_IDX: 'stage_name | sn (string)',
-    DESCRIPTION_IDX: 'description | desc (string)',
-    STAGE_DIALOGUE_GROUP_ID_IDX: 'stage_dialogue_group_id | sdgi (int)',
-    EXP_IDX: 'exp | exp (int)',
-    MONEY_IDX: 'money | money (int)',
-    COST_STAMINA_IDX: 'cost_stamina | cs (int)',
-    MAX_BATTLEWAVE_COUNT_IDX: 'max_battlewave_count | mbc (int)',
-    MAX_MOBS_BATTLEWAVE_IDX: 'max_mobs_battlewave | mbbl (int)',
-    NORMAL_MOB_GROUP_ID_IDX: 'normal_mob_group_id | nmgi (int)',
-    MOB_LEVEL_DIFFICULTY_IDX: 'mob_level_difficulty | mld (string)',
-    FINAL_BOSS_GROUP_ID_IDX: 'final_boss_group_id | fbgi (int)',
-    BOSS_LEVEL_DIFFICULTY_IDX: 'boss_level_difficulty | bld (string)',
-    DUNGEON_LEVEL_VARIABLES_IDX: 'dungeon_level_variables | dlv (int)',
-    SPECIAL_BONUS_STAGE_GROUP_ID_IDX: 'special_bonus_stage_group_id | sbsg (int)',
-    SPECIAL_BONUS_STAGE_IDX: 'special_bonus_stage | sbs (string)',
-    LOOT_ID_IDX: 'loot_id | loi (int)',
+    RANDOM_LIST_IDX: 'random_list | rl (int)',
+    MOB_ID_IDX: 'mob_id | mob_id (int)',
+    LEVEL_1_IDX: 'level_1 | lv1 (string)',
+    RATE_IDX: 'rate | rate (int)',
+    ENCOUNTER_RATE_IDX: 'encounter_rate | enc_rate (float)',
+    MOB_SPEC_ATT_DEF_1_IDX: 'mob_spec_att_def_1 | msad1 (string)',
+    MOB_SPEC_ATT_DEF_2_IDX: 'mob_spec_att_def_2 | msad2 (string)',
+    MOB_SPEC_ATT_DEF_3_IDX: 'mob_spec_att_def_3 | msad3 (string)',
 }
 # ---------------------------------------------
 bool_str_to_int_dict = {
@@ -79,8 +49,8 @@ bool_str_to_int_dict = {
     '0': 0,
 }
 # ---------------------------------------------
-start_row = 1
-start_col = 1
+start_row = 3
+start_col = 6
 # --------------------------------------------------
 # display title fields
 #row = 36
