@@ -1,201 +1,201 @@
-id | (int),location_id | locid (int),parent_zone_id | pzid (int),level_id | lvid (int),node_id | nid (int),parent_zone | pz (string),level_node | ln (string),stage_name | sn (string),description | desc (string),stage_dialogue_group_id | sdgi (int),exp | exp (int),money | money (int),cost_stamina | cs (int),max_battlewave_count | mbc (int),max_mobs_battlewave | mbbl (int),normal_mob_group_id | nmgi (int),mob_level_difficulty | mld (string),final_boss_group_id | fbgi (int),boss_level_difficulty | bld (string),dungeon_level_variables | dlv (int),special_bonus_stage_group_id | sbsg (int),special_bonus_stage | sbs (string),loot_id | loi (int),
-1,10000101,1000,1,1,"Incarnam ","1-1","Need a Hero!","There are invading wabbits in the city. We need a hero who is willing to go through fire and brimstones to defeat them!","See stage_text",30,500,3,3,2,101,"1^1^1^1",1001,"2^1^1^1",0,,,1001
-2,10000102,1000,1,2,"Incarnam ","1-2","Praying for a Hero","We are praying for a hero and you have finally come. Our fears are now dispelled. ","See stage_text",40,500,3,3,2,101,"1^1^1^1",1002,"2^1^1^1",0,,,1001
-3,10000103,1000,1,3,"Incarnam ","1-3","Worthy Hero","There is only one way to prove that you can be a worthy hero and go to Astrub.","See stage_text",50,500,3,3,2,101,"1^1^1^1",1003,"2^1^1^1",0,,,1001
-4,11000101,1100,1,1,"Astrub ","1-1","A New World!","Astrub is the testing ground for new heroes. The city have become dangerous all of a sudden.","See stage_text",100,1000,5,5,2,102,"1^1^1^1",1004,"10^3^3^1",1,127,"3^3^3^1",1001
-5,11000102,1100,1,2,"Astrub ","1-2","Soul's Crossing","Unrest is brewing and a mysterious presence is felt by everyone.","See stage_text",100,1000,5,5,2,102,"1^1^1^1",1005,"10^3^3^1",1,127,"3^3^3^1",
-6,11000103,1100,1,3,"Astrub ","1-3","Old Astrub","Investigate Old Astrub dungeon for the recent strange happenings. ","See stage_text",100,1000,5,5,2,102,"1^1^1^1",1006,"10^3^3^1",1,127,"3^3^3^1",
-7,11000104,1100,1,4,"Astrub ","1-4","House of Trouble","In the sewers north of Astrub is the House of Trouble.","See stage_text",100,1000,5,5,2,102,"1^1^1^1",1007,"10^3^3^1",1,127,"3^3^3^1",
-8,11000105,1100,1,5,"Astrub ","1-5","A New Finding","The truth will always reveal to the determined.","See stage_text",200,1000,7,6,2,102,"1^1^1^1",1008,"10^3^3^1",1,127,"3^3^3^1",
-9,11000106,1100,1,6,"Astrub ","1-6","Destiny Calls","The presence of a mysterious Dark Force is in this place and you have a very bad ominous feeling. ","See stage_text",400,1000,9,7,2,102,"1^1^1^1",1009,"10^3^3^1",1,127,"3^3^3^1",
-10,12000101,1200,1,1,"Amakna","1-1","The Gobball Rampage","Gobballs are most harmless creatures but lately they have been on a rampage","See stage_text",100,1000,5,5,2,103,"1^1^1^1",1010,"10^3^3^1",1,127,"3^3^3^1",
-11,12000102,1200,1,2,"Amakna","1-2","Raining Tofu","The docile tofu are attacking people. What is going on?","See stage_text",100,1000,5,5,2,103,"1^1^1^1",1011,"10^3^3^1",1,127,"3^3^3^1",
-12,12000103,1200,1,3,"Amakna","1-3","A Dofus","There is a mysterious report that a Dofus has been found. Could this be the cause of all the disturbances?","See stage_text",100,1000,5,5,2,103,"1^1^1^1",1012,"10^3^3^1",1,127,"3^3^3^1",
-13,12000104,1200,1,4,"Amakna","1-4","The Dark Woods","Investigate the woods for clues. Something unknown is lurking in there and it is scaring everyone. ","See stage_text",100,1000,5,5,2,103,"1^1^1^1",1013,"10^3^3^1",1,127,"3^3^3^1",
-14,12000105,1200,1,5,"Amakna","1-5","Swords Crossing","Beyond the Amakna ancient woods are a place that even bold adventurers dare not venture. Prove your courage.","See stage_text",200,1000,7,6,2,103,"1^1^1^1",1014,"10^3^3^1",1,127,"3^3^3^1",
-15,12000106,1200,1,6,"Amakna","1-6","Gobballified Country","The country of the Gobballs is a wild place. All the signs of the disturbance seem to be hinting from there. Be vigilant! ","See stage_text",400,1000,9,7,2,103,"1^1^1^1",1015,"10^3^3^1",1,127,"3^3^3^1",
-16,13000101,1300,1,1,"Bonta","1-1","Bonta Headquarters","What is going on? The Divine City have never been attacked before!","See stage_text",100,1000,5,5,2,104,"1^1^1^1",1016,"10^3^3^1",1,127,"3^3^3^1",
-17,13000102,1300,1,2,"Bonta","1-2","Cania Plains","Maraunding monsters are on a rampage and are pillaging their way in the Cania Plains. Stop them!","See stage_text",100,1000,5,5,2,104,"1^1^1^1",1017,"10^3^3^1",1,127,"3^3^3^1",
-18,13000103,1300,1,3,"Bonta","1-3","Arms Way","It is the same malicious force that is attacking the Divine City. Who has been directing the monsters?","See stage_text",100,1000,5,5,2,104,"1^1^1^1",1018,"10^3^3^1",1,127,"3^3^3^1",
-19,13000104,1300,1,4,"Bonta","1-4","Bonta Ruins","Parts of the Divine City is in ruins. Hero, we need you…","See stage_text",100,1000,5,5,2,104,"1^1^1^1",1019,"10^3^3^1",1,127,"3^3^3^1",
-20,13000105,1300,1,5,"Bonta","1-5","Departing Sorrows","This is the day that we got to make our stand.","See stage_text",200,1000,7,6,2,104,"1^1^1^1",1020,"10^3^3^1",1,127,"3^3^3^1",
-21,13000106,1300,1,6,"Bonta","1-6","Brakmar Influence","Dark Force arising. Could it be agents from Brakmar?","See stage_text",400,1000,9,7,2,104,"1^1^1^1",1021,"10^3^3^1",1,127,"3^3^3^1",
-22,14000101,1400,1,1,"Brakmar ","1-1","Brakmar Archipelego","An archipelego where your holidays could be numbered. ","See stage_text",100,1000,5,5,2,105,"1^1^1^1",1022,"10^3^3^1",1,127,"3^3^3^1",
-23,14000102,1400,1,2,"Brakmar ","1-2","The Burning Mines","The mines hold some of the secrets of Brakmar. You don't want to be in here.","See stage_text",100,1000,5,5,2,105,"1^1^1^1",1023,"10^3^3^1",1,127,"3^3^3^1",
-24,14000103,1400,1,3,"Brakmar ","1-3","Mourning Wood","Even Heroes feel sadness here especially when they died here.","See stage_text",100,1000,5,5,2,105,"1^1^1^1",1024,"10^3^3^1",1,127,"3^3^3^1",
-25,14000104,1400,1,4,"Brakmar ","1-4","Corruption of the Council","The viles experiments of the Brakmar Council are so appalling. These creatures…","See stage_text",100,1000,5,5,2,105,"1^1^1^1",1025,"10^3^3^1",1,127,"3^3^3^1",
-26,14000105,1400,1,5,"Brakmar ","1-5","Silmote ","This is the site of the vile experiments. Can your legs still move or are jelly?","See stage_text",200,1000,7,6,2,105,"1^1^1^1",1026,"10^3^3^1",1,127,"3^3^3^1",
-27,14000106,1400,1,6,"Brakmar ","1-6","Dark Corruption","A mighty force is stirring up here. Even the unshakable Brakmar is trembling now. ","See stage_text",400,1000,9,7,2,105,"1^1^1^1",1027,"10^3^3^1",1,127,"3^3^3^1",
-28,15000101,1500,1,1,"Sufokia","1-1","In Deep Waters","There are so much water here…","See stage_text",100,1000,5,5,2,106,"1^1^1^1",1028,"10^3^3^1",1,127,"3^3^3^1",
-29,15000102,1500,1,2,"Sufokia","1-2","Hanging Garden","Here is a spot of dry land. You are unwelcome here…","See stage_text",100,1000,5,5,2,106,"1^1^1^1",1029,"10^3^3^1",1,127,"3^3^3^1",
-30,15000103,1500,1,3,"Sufokia","1-3","Unna Bridge","Much of the history of Sufokia is under this bridge, um...according to legends...","See stage_text",100,1000,5,5,2,106,"1^1^1^1",1030,"10^3^3^1",1,127,"3^3^3^1",
-31,15000104,1500,1,4,"Sufokia","1-4","Turfo Canyon","Much of the waters of Sufokia is divided here. The caverns on the side of the Turfo Canyon grows eerie at night.","See stage_text",100,1000,5,5,2,106,"1^1^1^1",1031,"10^3^3^1",1,127,"3^3^3^1",
-32,15000105,1500,1,5,"Sufokia","1-5","Steamulating Shore","The waters here give off steam and is known to cause drowiness. Don't fall into the water when you are drowsy.","See stage_text",200,1000,7,6,2,106,"1^1^1^1",1032,"10^3^3^1",1,127,"3^3^3^1",
-33,15000106,1500,1,6,"Sufokia","1-6","Ultimate Monster","The Dark God of the Corrupted Brakmar Council. ","See stage_text",400,1000,9,7,2,106,"1^1^1^1",1033,"10^3^3^1",1,127,"3^3^3^1",
-34,0,,,,"Astrub ","2-1","Mystery at Astrub","Shadows are lurking in the streets, be vigilant! ","See stage_text",200,2000,7,5,3,107,"2^1.5^1.5^1",1034,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
-35,0,,,,"Astrub ","2-2","A Thousand Memories","Darkness reign underground. Rumor that the Eye of the World is deep under Astrub. ","See stage_text",200,2000,7,5,3,107,"2^1.5^1.5^1",1035,"15^3.5^3.5^1",1,127,"3^3^3^1",
-36,0,,,,"Astrub ","2-3","Deep Distrust","Proves your trustworthy with your blades!","See stage_text",200,2000,7,5,3,107,"2^1.5^1.5^1",1036,"15^3.5^3.5^1",1,127,"3^3^3^1",
-37,0,,,,"Astrub ","2-4","Temple of Ogrest","The cultist of Ogrest thrive here and they prove their devotions by being horrible to intruders. ","See stage_text",200,2000,7,5,3,107,"2^1.5^1.5^1",1037,"15^3.5^3.5^1",1,127,"3^3^3^1",
-38,0,,,,"Astrub ","2-5","House of Destiny","Are you the one that destiny calls for? You have managed to come here and it proves your determination.","See stage_text",400,2000,8,6,3,107,"2^1.5^1.5^1",1038,"15^3.5^3.5^1",1,127,"3^3^3^1",
-39,0,,,,"Astrub ","2-6","Blades of Furies","If you want to know the secret of the Dofus, you have to ask our blades first.","See stage_text",800,2000,9,7,3,107,"2^1.5^1.5^1",1039,"15^3.5^3.5^1",1,127,"3^3^3^1",
-40,0,,,,"Amakna","2-1","Holey Forest","Rare powerful monsters are suddenly appearing and causing chaos. ","See stage_text",200,2000,7,5,3,108,"2^1.5^1.5^1",1040,"15^3.5^3.5^1",1,127,"3^3^3^1",
-41,0,,,,"Amakna","2-2","Singing Forest","The forests are singing but it is a sad tone…","See stage_text",200,2000,7,5,3,108,"2^1.5^1.5^1",1041,"15^3.5^3.5^1",1,127,"3^3^3^1",
-42,0,,,,"Amakna","2-3","Hugo's Meadows","A sense of tranquil peace can be felt in this place.","See stage_text",200,2000,7,5,3,108,"2^1.5^1.5^1",1042,"15^3.5^3.5^1",1,127,"3^3^3^1",
-43,0,,,,"Amakna","2-4","Farle's Fields","This is hostile territorities. Many adventurers have been lost here and disappeared forever.","See stage_text",200,2000,7,5,3,108,"2^1.5^1.5^1",1043,"15^3.5^3.5^1",1,127,"3^3^3^1",
-44,0,,,,"Amakna","2-5","The Fields of Dust","What has happened to this place…","See stage_text",400,2000,8,6,3,108,"2^1.5^1.5^1",1044,"15^3.5^3.5^1",1,127,"3^3^3^1",
-45,0,,,,"Amakna","2-6","Tower Defense","The lights of a chromium orb can be seen here…","See stage_text",800,2000,9,7,3,108,"2^1.5^1.5^1",1045,"15^3.5^3.5^1",1,127,"3^3^3^1",
-46,0,,,,"Bonta","2-1","Trials of Light","The Keepers of Light are not going to reveal their secrets to anyone claiming to be a hero.","See stage_text",200,2000,7,5,3,109,"2^1.5^1.5^1",1046,"15^3.5^3.5^1",1,127,"3^3^3^1",
-47,0,,,,"Bonta","2-2","Temple of the Oracle ","As a sanctuary of the Divine City, this place is one of the most mysterious. ","See stage_text",200,2000,7,5,3,109,"2^1.5^1.5^1",1047,"15^3.5^3.5^1",1,127,"3^3^3^1",
-48,0,,,,"Bonta","2-3","Hidden Gateway","Looks dangerous but there is a strong presence that is pulling you to it…","See stage_text",200,2000,7,5,3,109,"2^1.5^1.5^1",1048,"15^3.5^3.5^1",1,127,"3^3^3^1",
-49,0,,,,"Bonta","2-4","Luminous Field","What could have cause these fields to glow?","See stage_text",200,2000,7,5,3,109,"2^1.5^1.5^1",1049,"15^3.5^3.5^1",1,127,"3^3^3^1",
-50,0,,,,"Bonta","2-5","Tower of Light","The Tower of Light is also called the Tower of the Lost Souls. ","See stage_text",400,2000,8,6,3,109,"2^1.5^1.5^1",1050,"15^3.5^3.5^1",1,127,"3^3^3^1",
-51,0,,,,"Bonta","2-6","Keeper of the Light","Light in the Darkness. ","See stage_text",800,2000,9,7,3,109,"2^1.5^1.5^1",1051,"15^3.5^3.5^1",1,127,"3^3^3^1",
-52,0,,,,"Brakmar ","2-1","City of Darkness","The vicinity seems to be filled with a terrible darkness.","See stage_text",200,2000,7,5,3,110,"2^1.5^1.5^1",1052,"15^3.5^3.5^1",1,127,"3^3^3^1",
-53,0,,,,"Brakmar ","2-2","The Secret Cavern","This place is full of malice and desperate souls, working to minted Kamas everyday to ensure the wealth of Brakmar.","See stage_text",200,2000,7,5,3,110,"2^1.5^1.5^1",1053,"15^3.5^3.5^1",1,127,"3^3^3^1",
-54,0,,,,"Brakmar ","2-3","Sidmote Moors","One of the most dangerous place in the territorities of Brakmar that even its citizens will not visit it…","See stage_text",200,2000,7,5,3,110,"2^1.5^1.5^1",1054,"15^3.5^3.5^1",1,127,"3^3^3^1",
-55,0,,,,"Brakmar ","2-4","Brakmar Village","What? A village in the middle of the Sidmote Moors?","See stage_text",200,2000,7,5,3,110,"2^1.5^1.5^1",1055,"15^3.5^3.5^1",1,127,"3^3^3^1",
-56,0,,,,"Brakmar ","2-5","Darkness Discovery","We are the Darkness…","See stage_text",400,2000,8,6,3,110,"2^1.5^1.5^1",1056,"15^3.5^3.5^1",1,127,"3^3^3^1",
-57,0,,,,"Brakmar ","2-6","The Wheel of Time","They called themselves the Keepers of Time but they are actually trying to disrupt time…","See stage_text",800,2000,9,7,3,110,"2^1.5^1.5^1",1057,"15^3.5^3.5^1",1,127,"3^3^3^1",
-58,0,,,,"Sufokia","2-1","The Mysterious Waterhole","The waters here have turned bitter and undrinkable…","See stage_text",200,2000,7,5,3,111,"2^1.5^1.5^1",1058,"15^3.5^3.5^1",1,127,"3^3^3^1",
-59,0,,,,"Sufokia","2-2","The Other Side","It appears to be a wyrm hole. How can it be?","See stage_text",200,2000,7,5,3,111,"2^1.5^1.5^1",1059,"15^3.5^3.5^1",1,127,"3^3^3^1",
-60,0,,,,"Sufokia","2-3","The Mist","Where did these mist comes from? These seem to be a taint of evil in this mist…","See stage_text",200,2000,7,5,3,111,"2^1.5^1.5^1",1060,"15^3.5^3.5^1",1,127,"3^3^3^1",
-61,0,,,,"Sufokia","2-4","Gutted Plaza","The dead here are like fishes that are gutted…work of the Eca?","See stage_text",200,2000,7,5,3,111,"2^1.5^1.5^1",1061,"15^3.5^3.5^1",1,127,"3^3^3^1",
-62,0,,,,"Sufokia","2-5","The Misty Walkway","A mysterious force is pulling you to the other side. ","See stage_text",400,2000,8,6,3,111,"2^1.5^1.5^1",1062,"15^3.5^3.5^1",1,127,"3^3^3^1",
-63,0,,,,"Sufokia","2-6","King of the Snappers","A trembling fear can be felt by all that approaches…","See stage_text",800,2000,9,7,3,111,"2^1.5^1.5^1",1063,"15^3.5^3.5^1",1,127,"3^3^3^1",
-64,0,,,,"Astrub ","3-1","Divine Light","Heroes are gathering but so are the invading monsters.","See stage_text",400,3000,8,6,4,112,"3^2^^2^1",1064,"20^4^4^1",1,127,"3^3^3^1",
-65,0,,,,"Astrub ","3-2","House of Destiny","Hero, your destiny guides you but is that the best that you can do?","See stage_text",400,3000,8,6,4,112,"3^2^^2^1",1065,"20^4^4^1",1,127,"3^3^3^1",
-66,0,,,,"Astrub ","3-3","Forbidden Ground","Entry strictly forbidden to all non-builders!","See stage_text",400,3000,8,6,4,112,"3^2^^2^1",1066,"20^4^4^1",1,127,"3^3^3^1",
-67,0,,,,"Astrub ","3-4","Underground Error","To avoid the reoccurence of past errors, adventurers are requested to continue on their way.","See stage_text",400,3000,8,6,4,112,"3^2^^2^1",1067,"20^4^4^1",1,127,"3^3^3^1",
-68,0,,,,"Astrub ","3-5","A Message for All","Leave it to the professionals to build a better future for us all. ","See stage_text",800,3000,9,7,4,112,"3^2^^2^1",1068,"20^4^4^1",1,127,"3^3^3^1",
-69,0,,,,"Astrub ","3-6","Access Point","The battle at Access Point is crucial unravel the mysteries of the malicious force.","See stage_text",1600,3000,10,8,4,112,"3^2^^2^1",1069,"20^4^4^1",1,127,"3^3^3^1",
-70,0,,,,"Amakna","3-1","Dungeon of Destiny","So that is what the key of destiny is for.","See stage_text",400,3000,8,6,4,113,"3^2^^2^1",1070,"20^4^4^1",1,127,"3^3^3^1",
-71,0,,,,"Amakna","3-2","The Sword of Destiny","Your destiny shall begin here! ","See stage_text",400,3000,8,6,4,113,"3^2^^2^1",1071,"20^4^4^1",1,127,"3^3^3^1",
-72,0,,,,"Amakna","3-3","Cruel Intentions","Something isn't too right here and overwhelming sense of wickedness is in the air…","See stage_text",400,3000,8,6,4,113,"3^2^^2^1",1072,"20^4^4^1",1,127,"3^3^3^1",
-73,0,,,,"Amakna","3-4","Viral Infections","The entire place stink of fish stench. ","See stage_text",400,3000,8,6,4,113,"3^2^^2^1",1073,"20^4^4^1",1,127,"3^3^3^1",
-74,0,,,,"Amakna","3-5","The Harvester Fields","All that is golden is not good. The fields are too ripe but where are the farmers?","See stage_text",800,3000,9,7,4,113,"3^2^^2^1",1074,"20^4^4^1",1,127,"3^3^3^1",
-75,0,,,,"Amakna","3-6","The Lost Tower","This place gives off a creepy and evil presence. ","See stage_text",1600,3000,10,8,4,113,"3^2^^2^1",1075,"20^4^4^1",1,127,"3^3^3^1",
-76,0,,,,"Bonta","3-1","The Ancient Battlefield","This ancient battlefield has long been forgotten except by a few…","See stage_text",400,3000,8,6,4,114,"3^2^^2^1",1076,"20^4^4^1",1,127,"3^3^3^1",
-77,0,,,,"Bonta","3-2","The Sinister Hideout","It is a place for reviewing ideas by the Sinistrinity, a three member gang.","See stage_text",400,3000,8,6,4,114,"3^2^^2^1",1077,"20^4^4^1",1,127,"3^3^3^1",
-78,0,,,,"Bonta","3-3","The Atta Grotto","It is the smallest of the low-level trio of mines in Bonta. ","See stage_text",400,3000,8,6,4,114,"3^2^^2^1",1078,"20^4^4^1",1,127,"3^3^3^1",
-79,0,,,,"Bonta","3-4","Kandee Mines","Middle-sized of the low-level trio of mines in Bonta. More dangerous than Atta Grotto.","See stage_text",400,3000,8,6,4,114,"3^2^^2^1",1079,"20^4^4^1",1,127,"3^3^3^1",
-80,0,,,,"Bonta","3-5","Craft Mines","The largest of the low-level trio of miones in Bonta. It is easy to get lost here…","See stage_text",800,3000,9,7,4,114,"3^2^^2^1",1080,"20^4^4^1",1,127,"3^3^3^1",
-81,0,,,,"Bonta","3-6","The Tree of Light","The holy light of the Tree of Light is so comforting…","See stage_text",1600,3000,10,8,4,114,"3^2^^2^1",1081,"20^4^4^1",1,127,"3^3^3^1",
-82,0,,,,"Brakmar ","3-1","The Dark Animus","Why is that the Dark Animus is giving off a familiar sense like that of a Dofus? Could it be…","See stage_text",400,3000,8,6,4,115,"3^2^^2^1",1082,"20^4^4^1",1,127,"3^3^3^1",
-83,0,,,,"Brakmar ","3-2","Globblard Boulevard","This is the ancient graveyard of a lost species of powerful Gobballs that once dominated the lands.","See stage_text",400,3000,8,6,4,115,"3^2^^2^1",1083,"20^4^4^1",1,127,"3^3^3^1",
-84,0,,,,"Brakmar ","3-3","Gnashville","Signs of an ancient battle seem to have taken place here and the atmosphere is still filled with the horrors of yesterday's battle.","See stage_text",400,3000,8,6,4,115,"3^2^^2^1",1084,"20^4^4^1",1,127,"3^3^3^1",
-85,0,,,,"Brakmar ","3-4","The Fields of the Lost Souls","A sinister betrayal has once taken place here and the place is still filled with the cries of these angrish souls.","See stage_text",400,3000,8,6,4,115,"3^2^^2^1",1085,"20^4^4^1",1,127,"3^3^3^1",
-86,0,,,,"Brakmar ","3-5","Ancient Brakmar","There are many dark secrets in this place…","See stage_text",800,3000,9,7,4,115,"3^2^^2^1",1086,"20^4^4^1",1,127,"3^3^3^1",
-87,0,,,,"Brakmar ","3-6","The True Nature","The true nature of Brakmar is not for the hearts of the weak.","See stage_text",1600,3000,10,8,4,115,"3^2^^2^1",1087,"20^4^4^1",1,127,"3^3^3^1",
-88,0,,,,"Sufokia","3-1","The Vestige Residue","These are once green fields and meadows and now it is just waters.","See stage_text",400,3000,8,6,4,116,"3^2^^2^1",1088,"20^4^4^1",1,127,"3^3^3^1",
-89,0,,,,"Sufokia","3-2","Ships Graveyard","So many sunken ships, what terrible destructions...","See stage_text",400,3000,8,6,4,116,"3^2^^2^1",1089,"20^4^4^1",1,127,"3^3^3^1",
-90,0,,,,"Sufokia","3-3","The Black Winds","The mountains echo with the sounds of the eerie black winds…","See stage_text",400,3000,8,6,4,116,"3^2^^2^1",1090,"20^4^4^1",1,127,"3^3^3^1",
-91,0,,,,"Sufokia","3-4","The Secret Haven","The dark wind howls in a manner that is unseen in the rest of the world.","See stage_text",400,3000,8,6,4,116,"3^2^^2^1",1091,"20^4^4^1",1,127,"3^3^3^1",
-92,0,,,,"Sufokia","3-5","The Ogrest Birthplace","This is where the Ogrest is said to be born…","See stage_text",800,3000,9,7,4,116,"3^2^^2^1",1092,"20^4^4^1",1,127,"3^3^3^1",
-93,0,,,,"Sufokia","3-6","The Abyss of Dathura","This is where Dathura, Ogrest's love is said to have fallen. ","See stage_text",1600,3000,10,8,4,116,"3^2^^2^1",1093,"20^4^4^1",1,127,"3^3^3^1",
-94,0,,,,"Astrub ","4-1","The Diaspora","The free territorities of Astrub is in a mess.","See stage_text",800,4000,9,6,5,117,"4^2.5^2.5^1",1094,"25^4.5^4.5^1",1,127,"3^3^3^1",
-95,0,,,,"Astrub ","4-2","Times of Trouble","We have fallen into an era of darkness. Only a hero can dispel the darkness.","See stage_text",800,4000,9,6,5,117,"4^2.5^2.5^1",1095,"25^4.5^4.5^1",1,127,"3^3^3^1",
-96,0,,,,"Astrub ","4-3","The Eye of the Storm","Only a hero can lift the despair that is surrounding this storm…","See stage_text",800,4000,9,6,5,117,"4^2.5^2.5^1",1096,"25^4.5^4.5^1",1,127,"3^3^3^1",
-97,0,,,,"Astrub ","4-4","City of the Rogue","An uneasy feeling fills the air around here causing even the bravest to lose their courage.","See stage_text",800,4000,9,6,5,117,"4^2.5^2.5^1",1097,"25^4.5^4.5^1",1,127,"3^3^3^1",
-98,0,,,,"Astrub ","4-5","Astrub Center","After a great difficulty, you have finally fought your way to the Astrub Center.","See stage_text",1600,4000,10,7,5,117,"4^2.5^2.5^1",1098,"25^4.5^4.5^1",1,127,"3^3^3^1",
-99,0,,,,"Astrub ","4-6","Great Impass","Hero, stand on your ground! Do not be fearful! ","See stage_text",3200,4000,12,8,5,117,"4^2.5^2.5^1",1099,"25^4.5^4.5^1",1,127,"3^3^3^1",
-100,0,,,,"Amakna","4-1","Farle Forest","Beware, much of the this place is still virgin forest.","See stage_text",800,4000,9,6,5,118,"4^2.5^2.5^1",1100,"25^4.5^4.5^1",1,127,"3^3^3^1",
-101,0,,,,"Amakna","4-2","The Hidden Garden","What is this place? It is not on the map…","See stage_text",800,4000,9,6,5,118,"4^2.5^2.5^1",1101,"25^4.5^4.5^1",1,127,"3^3^3^1",
-102,0,,,,"Amakna","4-3","The Garden Paradise","Who would believe that such a place would exist in Amakna.","See stage_text",800,4000,9,6,5,118,"4^2.5^2.5^1",1102,"25^4.5^4.5^1",1,127,"3^3^3^1",
-103,0,,,,"Amakna","4-4","The Golden Apple","You have been warned not to eat of the golden apple in the middle…","See stage_text",800,4000,9,6,5,118,"4^2.5^2.5^1",1103,"25^4.5^4.5^1",1,127,"3^3^3^1",
-104,0,,,,"Amakna","4-5","Singing Fields","A truly magnificent place but it did not ease the heavy burden in your mind.","See stage_text",1600,4000,10,7,5,118,"4^2.5^2.5^1",1104,"25^4.5^4.5^1",1,127,"3^3^3^1",
-105,0,,,,"Amakna","4-6","The Treechnid Empire","It is so unbelievable to find so many of these Treechnids here…","See stage_text",3200,4000,12,8,5,118,"4^2.5^2.5^1",1105,"25^4.5^4.5^1",1,127,"3^3^3^1",
-106,0,,,,"Bonta","4-1","Hero Field","Unspeakable horrors thrive in this place. You hardly believe that this is Bonta.","See stage_text",800,4000,9,6,5,119,"4^2.5^2.5^1",1106,"25^4.5^4.5^1",1,127,"3^3^3^1",
-107,0,,,,"Bonta","4-2","Blue and the White","Tall marbles columns can be seen in these ruins, a reminder of a past civilization.","See stage_text",800,4000,9,6,5,119,"4^2.5^2.5^1",1107,"25^4.5^4.5^1",1,127,"3^3^3^1",
-108,0,,,,"Bonta","4-3","The Ancient Forgotten City","The ruins of this city hide a mighty secret which is only revealable to the brave.","See stage_text",800,4000,9,6,5,119,"4^2.5^2.5^1",1108,"25^4.5^4.5^1",1,127,"3^3^3^1",
-109,0,,,,"Bonta","4-4","The Temple of the Gods","Once a divine dedication to the Gods but now a cursed place…","See stage_text",800,4000,9,6,5,119,"4^2.5^2.5^1",1109,"25^4.5^4.5^1",1,127,"3^3^3^1",
-110,0,,,,"Bonta","4-5","The Relic of the Gods","The mighty whip of the Gods, to punish all heretics. ","See stage_text",1600,4000,10,7,5,119,"4^2.5^2.5^1",1110,"25^4.5^4.5^1",1,127,"3^3^3^1",
-111,0,,,,"Bonta","4-6","The Shrine of Ogrest","This is, this is the Shrine of Ogrest? In Bonta!?","See stage_text",3200,4000,12,8,5,119,"4^2.5^2.5^1",1111,"25^4.5^4.5^1",1,127,"3^3^3^1",
-112,0,,,,"Brakmar ","4-1","The Anvil","Only a high ranking citizen of Brakmar can access. All intruders must be vanquished!","See stage_text",800,4000,9,6,5,120,"4^2.5^2.5^1",1112,"25^4.5^4.5^1",1,127,"3^3^3^1",
-113,0,,,,"Brakmar ","4-2","The Brakmar Council","A fair trial will be given to you if you do not resist…","See stage_text",800,4000,9,6,5,120,"4^2.5^2.5^1",1113,"25^4.5^4.5^1",1,127,"3^3^3^1",
-114,0,,,,"Brakmar ","4-3","The Finger of the God","This ancient relic is able to stop Ogrest…for a while.","See stage_text",800,4000,9,6,5,120,"4^2.5^2.5^1",1114,"25^4.5^4.5^1",1,127,"3^3^3^1",
-115,0,,,,"Brakmar ","4-4","Return to Power","Everyone is bowing to Ogrest nowadays…","See stage_text",800,4000,9,6,5,120,"4^2.5^2.5^1",1115,"25^4.5^4.5^1",1,127,"3^3^3^1",
-116,0,,,,"Brakmar ","4-5","The Secret Place","A place so secret that no one knows its exact location.","See stage_text",1600,4000,10,7,5,120,"4^2.5^2.5^1",1116,"25^4.5^4.5^1",1,127,"3^3^3^1",
-117,0,,,,"Brakmar ","4-6","The Divine Forge","No one is allowed to the inner santuary and will be allowed to live.","See stage_text",3200,4000,12,8,5,120,"4^2.5^2.5^1",1117,"25^4.5^4.5^1",1,127,"3^3^3^1",
-118,0,,,,"Sufokia","4-1","The Forbidden Canyon","Also called the forbidden grounds, no one has ever survive a trip down there…","See stage_text",800,4000,9,6,5,121,"4^2.5^2.5^1",1118,"25^4.5^4.5^1",1,127,"3^3^3^1",
-119,0,,,,"Sufokia","4-2","The Cavern of the Gods","Even Ogrest dare not disturb the resting ground of the Gods here. How dare you!","See stage_text",800,4000,9,6,5,121,"4^2.5^2.5^1",1119,"25^4.5^4.5^1",1,127,"3^3^3^1",
-120,0,,,,"Sufokia","4-3","Bridge of the Lost","It is where the lost souls go to the other side of the world.","See stage_text",800,4000,9,6,5,121,"4^2.5^2.5^1",1120,"25^4.5^4.5^1",1,127,"3^3^3^1",
-121,0,,,,"Sufokia","4-4","The Paradise","Beneath the wondrous beauty lies fierce guardians….","See stage_text",800,4000,9,6,5,121,"4^2.5^2.5^1",1121,"25^4.5^4.5^1",1,127,"3^3^3^1",
-122,0,,,,"Sufokia","4-5","The Lost Island","The final clue lies here or your final destiny.","See stage_text",1600,4000,10,7,5,121,"4^2.5^2.5^1",1122,"25^4.5^4.5^1",1,127,"3^3^3^1",
-123,0,,,,"Sufokia","4-6","Ogrest's Chaos","Source of the Ogrest Chaos","See stage_text",3200,4000,12,8,5,121,"4^2.5^2.5^1",1123,"25^4.5^4.5^1",1,127,"3^3^3^1",
-124,0,,,,"Astrub ","5-1","Destiny Begins","Hero, we need you. We are under attack!","See stage_text",1600,5000,10,7,6,122,"5^3^3^1",1124,"30^5^5^1",1,127,"3^3^3^1",
-125,0,,,,"Astrub ","5-2","The Burning City","The oppressing presence of the enemy are everywhere around us!","See stage_text",1600,5000,10,7,6,122,"5^3^3^1",1125,"30^5^5^1",1,127,"3^3^3^1",
-126,0,,,,"Astrub ","5-3","Fighting for Victory","We shall not bow to the invaders. We must overcome them with our spirits!","See stage_text",1600,5000,10,7,6,122,"5^3^3^1",1126,"30^5^5^1",1,127,"3^3^3^1",
-127,0,,,,"Astrub ","5-4","Undying Fighting Spirits","Astrub shall not be the first city to fall. We must endure…","See stage_text",1600,5000,10,7,6,122,"5^3^3^1",1127,"30^5^5^1",1,127,"3^3^3^1",
-128,0,,,,"Astrub ","5-5","Comforting Light","Hero, we have come so far to give up. We need your courage…","See stage_text",3200,5000,12,8,6,122,"5^3^3^1",1128,"30^5^5^1",1,127,"3^3^3^1",
-129,0,,,,"Astrub ","5-6","The Final Stand","We are making a final stand now. This is a fight for survival…","See stage_text",6400,5000,14,9,6,122,"5^3^3^1",1129,"30^5^5^1",1,127,"3^3^3^1",
-130,0,,,,"Amakna","5-1","The Amakna Outpost","Fierce fightings are everywhere. Hero, you are finally here…","See stage_text",1600,5000,10,7,6,123,"5^3^3^1",1130,"30^5^5^1",1,127,"3^3^3^1",
-131,0,,,,"Amakna","5-2","The Stone Fort","The enemy has taken over this fort. We must retake this crucial defense line.","See stage_text",1600,5000,10,7,6,123,"5^3^3^1",1131,"30^5^5^1",1,127,"3^3^3^1",
-132,0,,,,"Amakna","5-3","The Green Fields","Be wary of ambushes. This place is the perfect place for setting ambushes.","See stage_text",1600,5000,10,7,6,123,"5^3^3^1",1132,"30^5^5^1",1,127,"3^3^3^1",
-133,0,,,,"Amakna","5-4","The Resistance Force","Hero, you have finally come. We are desperate for reinforcements…","See stage_text",1600,5000,10,7,6,123,"5^3^3^1",1133,"30^5^5^1",1,127,"3^3^3^1",
-134,0,,,,"Amakna","5-5","The Burning Spirits","The enemy is strong and we are desperate…","See stage_text",3200,5000,12,8,6,123,"5^3^3^1",1134,"30^5^5^1",1,127,"3^3^3^1",
-135,0,,,,"Amakna","5-6","Solace","This is the final battle already. For Amakna!","See stage_text",6400,5000,14,9,6,123,"5^3^3^1",1135,"30^5^5^1",1,127,"3^3^3^1",
-136,0,,,,"Bonta","5-1","Destiny Renews","Fear spread throughout the Divine City of Bonta. You have finally arrived…","See stage_text",1600,5000,10,7,6,124,"5^3^3^1",1136,"30^5^5^1",1,127,"3^3^3^1",
-137,0,,,,"Bonta","5-2","The Guardians of Bonta","Today, we proclaim you as the Guardian of Bonta. Go now and do not disappoint us.","See stage_text",1600,5000,10,7,6,124,"5^3^3^1",1137,"30^5^5^1",1,127,"3^3^3^1",
-138,0,,,,"Bonta","5-3","The Armourers ","These are traitors. The secrets of our armors are given to Ogrest's forces…stop them please.","See stage_text",1600,5000,10,7,6,124,"5^3^3^1",1138,"30^5^5^1",1,127,"3^3^3^1",
-139,0,,,,"Bonta","5-4","The Inner Sanctum","The cronies of Ogrest are everywhere, even deep in the hearts of Bonta…","See stage_text",1600,5000,10,7,6,124,"5^3^3^1",1139,"30^5^5^1",1,127,"3^3^3^1",
-140,0,,,,"Bonta","5-5","The Traitors","You shall not live to tell others of our betrayal!","See stage_text",3200,5000,12,8,6,124,"5^3^3^1",1140,"30^5^5^1",1,127,"3^3^3^1",
-141,0,,,,"Bonta","5-6","Bonta In Ruins","Fire and ashes now surrounded the city. We pray for deliverance…","See stage_text",6400,5000,14,9,6,124,"5^3^3^1",1141,"30^5^5^1",1,127,"3^3^3^1",
-142,0,,,,"Brakmar ","5-1","The Broken Walls of Brakmar","The high walls of Brakmar are shattered and the invaders are wrecking havoc…","See stage_text",1600,5000,10,7,6,125,"5^3^3^1",1142,"30^5^5^1",1,127,"3^3^3^1",
-143,0,,,,"Brakmar ","5-2","The defense of Brakmar","Hero, we proclaim you a Defender of Brakmar. You must aid us and we shall not forget you for all eternality!","See stage_text",1600,5000,10,7,6,125,"5^3^3^1",1143,"30^5^5^1",1,127,"3^3^3^1",
-144,0,,,,"Brakmar ","5-3","The Treasury of Brakmar","Our hard earned kama are all stolen by the minions of Ogrest. Our economy is in ruins…","See stage_text",1600,5000,10,7,6,125,"5^3^3^1",1144,"30^5^5^1",1,127,"3^3^3^1",
-145,0,,,,"Brakmar ","5-4","The Last Fortress","We can't extend our hold anymore. You are our last desperate hope…","See stage_text",1600,5000,10,7,6,125,"5^3^3^1",1145,"30^5^5^1",1,127,"3^3^3^1",
-146,0,,,,"Brakmar ","5-5","Anvil and the Forge","Our weapons of steel will drown our enemy's pride! ","See stage_text",3200,5000,12,8,6,125,"5^3^3^1",1146,"30^5^5^1",1,127,"3^3^3^1",
-147,0,,,,"Brakmar ","5-6","Brakmar in flames","Brakmar is in ruins but our determination to fight will never be vanquished! ","See stage_text",6400,5000,14,9,6,125,"5^3^3^1",1147,"30^5^5^1",1,127,"3^3^3^1",
-148,0,,,,"Sufokia","5-1","Ogrest Keep","When did this diablolic keep first appear?. It is so out of the blue. This keep must be taken down at all costs. Onward!","See stage_text",1600,5000,10,7,6,126,"5^3^3^1",1148,"30^5^5^1",1,127,"3^3^3^1",
-149,0,,,,"Sufokia","5-2","Fight for Survival","The free lands are at stake here if Ogrest's champions take over Sufokia. ","See stage_text",1600,5000,10,7,6,126,"5^3^3^1",1149,"30^5^5^1",1,127,"3^3^3^1",
-150,0,,,,"Sufokia","5-3","Free Sufokia","Sufokia is under a terrible yoke. Hero, you are finally here…","See stage_text",1600,5000,10,7,6,126,"5^3^3^1",1150,"30^5^5^1",1,127,"3^3^3^1",
-151,0,,,,"Sufokia","5-4","The Blessings of the Nations","May the divine lights of the Gods be on you. Take courage and do not be afraid.","See stage_text",1600,5000,10,7,6,126,"5^3^3^1",1151,"30^5^5^1",1,127,"3^3^3^1",
-152,0,,,,"Sufokia","5-5","Aftershock","Many have fallen and many more perished. This is our last stand now…","See stage_text",3200,5000,12,8,6,126,"5^3^3^1",1152,"30^5^5^1",1,127,"3^3^3^1",
-153,0,,,,"Sufokia","5-6","The Great Confrontation","Nobody dares to confront Ogrest, not even the Gods.","See stage_text",6400,5000,14,9,6,126,"5^3^3^1",1153,"30^5^5^1",1,127,"3^3^3^1",
-154,16000101,1600,1,1,"XP Bonus Stage","1-1","XP Stage Normal",,"See stage_text",,,20,5,2,128,"3^3^3^1",1154,"10^3^3^1",0,127,"3^3^3^1",
-155,16000102,1600,1,2,"XP Bonus Stage","1-2","XP Stage Elite",,"See stage_text",,,30,5,3,129,"3^3^3^1",1155,"20^4^4^1",0,127,"3^3^3^1",
-156,16000103,1600,1,3,"XP Bonus Stage","1-3","XP Stage Master",,"See stage_text",,,40,5,4,130,"3^3^3^1",1156,"30^5^5^1",0,127,"3^3^3^1",
-157,0,,,,,,,,,,,,,,,,,,,,,
-158,0,,,,,,,,,,,,,,,,,,,,,
-159,0,,,,,,,,,,,,,,,,,,,,,
-160,0,,,,,,,,,,,,,,,,,,,,,
-161,0,,,,,,,,,,,,,,,,,,,,,
-162,0,,,,,,,,,,,,,,,,,,,,,
-163,0,,,,,,,,,,,,,,,,,,,,,
-164,0,,,,,,,,,,,,,,,,,,,,,
-165,0,,,,,,,,,,,,,,,,,,,,,
-166,0,,,,,,,,,,,,,,,,,,,,,
-167,0,,,,,,,,,,,,,,,,,,,,,
-168,0,,,,,,,,,,,,,,,,,,,,,
-169,0,,,,,,,,,,,,,,,,,,,,,
-170,0,,,,,,,,,,,,,,,,,,,,,
-171,0,,,,,,,,,,,,,,,,,,,,,
-172,0,,,,,,,,,,,,,,,,,,,,,
-173,0,,,,,,,,,,,,,,,,,,,,,
-174,0,,,,,,,,,,,,,,,,,,,,,
-175,0,,,,,,,,,,,,,,,,,,,,,
-176,0,,,,,,,,,,,,,,,,,,,,,
-177,0,,,,,,,,,,,,,,,,,,,,,
-178,0,,,,,,,,,,,,,,,,,,,,,
-179,0,,,,,,,,,,,,,,,,,,,,,
-180,0,,,,,,,,,,,,,,,,,,,,,
-181,0,,,,,,,,,,,,,,,,,,,,,
-182,0,,,,,,,,,,,,,,,,,,,,,
-183,0,,,,,,,,,,,,,,,,,,,,,
-184,0,,,,,,,,,,,,,,,,,,,,,
-185,0,,,,,,,,,,,,,,,,,,,,,
-186,0,,,,,,,,,,,,,,,,,,,,,
-187,0,,,,,,,,,,,,,,,,,,,,,
-188,0,,,,,,,,,,,,,,,,,,,,,
-189,0,,,,,,,,,,,,,,,,,,,,,
-190,0,,,,,,,,,,,,,,,,,,,,,
-191,0,,,,,,,,,,,,,,,,,,,,,
-192,0,,,,,,,,,,,,,,,,,,,,,
-193,0,,,,,,,,,,,,,,,,,,,,,
-194,0,,,,,,,,,,,,,,,,,,,,,
-195,0,,,,,,,,,,,,,,,,,,,,,
-196,0,,,,,,,,,,,,,,,,,,,,,
-197,0,,,,,,,,,,,,,,,,,,,,,
-198,0,,,,,,,,,,,,,,,,,,,,,
-199,0,,,,,,,,,,,,,,,,,,,,,
-200,0,,,,,,,,,,,,,,,,,,,,,
+id | (int),unlock_location_id | ulocid (int),location_id | locid (int),parent_zone_id | pzid (int),level_id | lvid (int),node_id | nid (int),parent_zone | pz (string),level_node | ln (string),stage_name | sn (string),description | desc (string),stage_dialogue_group_id | sdgi (int),exp | exp (int),money | money (int),cost_stamina | cs (int),max_battlewave_count | mbc (int),max_mobs_battlewave | mbbl (int),normal_mob_group_id | nmgi (int),mob_level_difficulty | mld (string),final_boss_group_id | fbgi (int),boss_level_difficulty | bld (string),dungeon_level_variables | dlv (int),special_bonus_stage_group_id | sbsg (int),special_bonus_stage | sbs (string),loot_id | loi (int),
+1,,10000101,1000,1,1,"Incarnam ","1-1","Need a Hero!","There are invading wabbits in the city. We need a hero who is willing to go through fire and brimstones to defeat them!","See stage_text",30,500,3,3,2,101,"1^1^1^1",1001,"2^1^1^1",0,,,1001
+2,,10000102,1000,1,2,"Incarnam ","1-2","Praying for a Hero","We are praying for a hero and you have finally come. Our fears are now dispelled. ","See stage_text",40,500,3,3,2,101,"1^1^1^1",1002,"2^1^1^1",0,,,1001
+3,,10000103,1000,1,3,"Incarnam ","1-3","Worthy Hero","There is only one way to prove that you can be a worthy hero and go to Astrub.","See stage_text",50,500,3,3,2,101,"1^1^1^1",1003,"2^1^1^1",0,,,1001
+4,,11000101,1100,1,1,"Astrub ","1-1","A New World!","Astrub is the testing ground for new heroes. The city have become dangerous all of a sudden.","See stage_text",100,1000,5,5,2,102,"1^1^1^1",1004,"10^3^3^1",1,127,"3^3^3^1",1001
+5,,11000102,1100,1,2,"Astrub ","1-2","Soul's Crossing","Unrest is brewing and a mysterious presence is felt by everyone.","See stage_text",100,1000,5,5,2,102,"1^1^1^1",1005,"10^3^3^1",1,127,"3^3^3^1",1001
+6,,11000103,1100,1,3,"Astrub ","1-3","Old Astrub","Investigate Old Astrub dungeon for the recent strange happenings. ","See stage_text",100,1000,5,5,2,102,"1^1^1^1",1006,"10^3^3^1",1,127,"3^3^3^1",1001
+7,,11000104,1100,1,4,"Astrub ","1-4","House of Trouble","In the sewers north of Astrub is the House of Trouble.","See stage_text",100,1000,5,5,2,102,"1^1^1^1",1007,"10^3^3^1",1,127,"3^3^3^1",1001
+8,,11000105,1100,1,5,"Astrub ","1-5","A New Finding","The truth will always reveal to the determined.","See stage_text",200,1000,7,6,2,102,"1^1^1^1",1008,"10^3^3^1",1,127,"3^3^3^1",1001
+9,,11000106,1100,1,6,"Astrub ","1-6","Destiny Calls","The presence of a mysterious Dark Force is in this place and you have a very bad ominous feeling. ","See stage_text",400,1000,9,7,2,102,"1^1^1^1",1009,"10^3^3^1",1,127,"3^3^3^1",1001
+10,,12000101,1200,1,1,"Amakna","1-1","The Gobball Rampage","Gobballs are most harmless creatures but lately they have been on a rampage","See stage_text",100,1000,5,5,2,103,"1^1^1^1",1010,"10^3^3^1",1,127,"3^3^3^1",1001
+11,,12000102,1200,1,2,"Amakna","1-2","Raining Tofu","The docile tofu are attacking people. What is going on?","See stage_text",100,1000,5,5,2,103,"1^1^1^1",1011,"10^3^3^1",1,127,"3^3^3^1",1001
+12,,12000103,1200,1,3,"Amakna","1-3","A Dofus","There is a mysterious report that a Dofus has been found. Could this be the cause of all the disturbances?","See stage_text",100,1000,5,5,2,103,"1^1^1^1",1012,"10^3^3^1",1,127,"3^3^3^1",1001
+13,,12000104,1200,1,4,"Amakna","1-4","The Dark Woods","Investigate the woods for clues. Something unknown is lurking in there and it is scaring everyone. ","See stage_text",100,1000,5,5,2,103,"1^1^1^1",1013,"10^3^3^1",1,127,"3^3^3^1",1001
+14,,12000105,1200,1,5,"Amakna","1-5","Swords Crossing","Beyond the Amakna ancient woods are a place that even bold adventurers dare not venture. Prove your courage.","See stage_text",200,1000,7,6,2,103,"1^1^1^1",1014,"10^3^3^1",1,127,"3^3^3^1",1001
+15,,12000106,1200,1,6,"Amakna","1-6","Gobballified Country","The country of the Gobballs is a wild place. All the signs of the disturbance seem to be hinting from there. Be vigilant! ","See stage_text",400,1000,9,7,2,103,"1^1^1^1",1015,"10^3^3^1",1,127,"3^3^3^1",1001
+16,,13000101,1300,1,1,"Bonta","1-1","Bonta Headquarters","What is going on? The Divine City have never been attacked before!","See stage_text",100,1000,5,5,2,104,"1^1^1^1",1016,"10^3^3^1",1,127,"3^3^3^1",1001
+17,,13000102,1300,1,2,"Bonta","1-2","Cania Plains","Maraunding monsters are on a rampage and are pillaging their way in the Cania Plains. Stop them!","See stage_text",100,1000,5,5,2,104,"1^1^1^1",1017,"10^3^3^1",1,127,"3^3^3^1",1001
+18,,13000103,1300,1,3,"Bonta","1-3","Arms Way","It is the same malicious force that is attacking the Divine City. Who has been directing the monsters?","See stage_text",100,1000,5,5,2,104,"1^1^1^1",1018,"10^3^3^1",1,127,"3^3^3^1",1001
+19,,13000104,1300,1,4,"Bonta","1-4","Bonta Ruins","Parts of the Divine City is in ruins. Hero, we need you…","See stage_text",100,1000,5,5,2,104,"1^1^1^1",1019,"10^3^3^1",1,127,"3^3^3^1",1001
+20,,13000105,1300,1,5,"Bonta","1-5","Departing Sorrows","This is the day that we got to make our stand.","See stage_text",200,1000,7,6,2,104,"1^1^1^1",1020,"10^3^3^1",1,127,"3^3^3^1",1001
+21,,13000106,1300,1,6,"Bonta","1-6","Brakmar Influence","Dark Force arising. Could it be agents from Brakmar?","See stage_text",400,1000,9,7,2,104,"1^1^1^1",1021,"10^3^3^1",1,127,"3^3^3^1",1001
+22,,14000101,1400,1,1,"Brakmar ","1-1","Brakmar Archipelego","An archipelego where your holidays could be numbered. ","See stage_text",100,1000,5,5,2,105,"1^1^1^1",1022,"10^3^3^1",1,127,"3^3^3^1",1001
+23,,14000102,1400,1,2,"Brakmar ","1-2","The Burning Mines","The mines hold some of the secrets of Brakmar. You don't want to be in here.","See stage_text",100,1000,5,5,2,105,"1^1^1^1",1023,"10^3^3^1",1,127,"3^3^3^1",1001
+24,,14000103,1400,1,3,"Brakmar ","1-3","Mourning Wood","Even Heroes feel sadness here especially when they died here.","See stage_text",100,1000,5,5,2,105,"1^1^1^1",1024,"10^3^3^1",1,127,"3^3^3^1",1001
+25,,14000104,1400,1,4,"Brakmar ","1-4","Corruption of the Council","The viles experiments of the Brakmar Council are so appalling. These creatures…","See stage_text",100,1000,5,5,2,105,"1^1^1^1",1025,"10^3^3^1",1,127,"3^3^3^1",1001
+26,,14000105,1400,1,5,"Brakmar ","1-5","Silmote ","This is the site of the vile experiments. Can your legs still move or are jelly?","See stage_text",200,1000,7,6,2,105,"1^1^1^1",1026,"10^3^3^1",1,127,"3^3^3^1",1001
+27,,14000106,1400,1,6,"Brakmar ","1-6","Dark Corruption","A mighty force is stirring up here. Even the unshakable Brakmar is trembling now. ","See stage_text",400,1000,9,7,2,105,"1^1^1^1",1027,"10^3^3^1",1,127,"3^3^3^1",1001
+28,,15000101,1500,1,1,"Sufokia","1-1","In Deep Waters","There are so much water here…","See stage_text",100,1000,5,5,2,106,"1^1^1^1",1028,"10^3^3^1",1,127,"3^3^3^1",1001
+29,,15000102,1500,1,2,"Sufokia","1-2","Hanging Garden","Here is a spot of dry land. You are unwelcome here…","See stage_text",100,1000,5,5,2,106,"1^1^1^1",1029,"10^3^3^1",1,127,"3^3^3^1",1001
+30,,15000103,1500,1,3,"Sufokia","1-3","Unna Bridge","Much of the history of Sufokia is under this bridge, um...according to legends...","See stage_text",100,1000,5,5,2,106,"1^1^1^1",1030,"10^3^3^1",1,127,"3^3^3^1",1001
+31,,15000104,1500,1,4,"Sufokia","1-4","Turfo Canyon","Much of the waters of Sufokia is divided here. The caverns on the side of the Turfo Canyon grows eerie at night.","See stage_text",100,1000,5,5,2,106,"1^1^1^1",1031,"10^3^3^1",1,127,"3^3^3^1",1001
+32,,15000105,1500,1,5,"Sufokia","1-5","Steamulating Shore","The waters here give off steam and is known to cause drowiness. Don't fall into the water when you are drowsy.","See stage_text",200,1000,7,6,2,106,"1^1^1^1",1032,"10^3^3^1",1,127,"3^3^3^1",1001
+33,,15000106,1500,1,6,"Sufokia","1-6","Ultimate Monster","The Dark God of the Corrupted Brakmar Council. ","See stage_text",400,1000,9,7,2,106,"1^1^1^1",1033,"10^3^3^1",1,127,"3^3^3^1",1001
+34,,11000201,1100,2,1,"Astrub ","2-1","Mystery at Astrub","Shadows are lurking in the streets, be vigilant! ","See stage_text",200,2000,7,5,3,107,"2^1.5^1.5^1",1034,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+35,,11000202,1100,2,2,"Astrub ","2-2","A Thousand Memories","Darkness reign underground. Rumor that the Eye of the World is deep under Astrub. ","See stage_text",200,2000,7,5,3,107,"2^1.5^1.5^1",1035,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+36,,11000203,1100,2,3,"Astrub ","2-3","Deep Distrust","Proves your trustworthy with your blades!","See stage_text",200,2000,7,5,3,107,"2^1.5^1.5^1",1036,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+37,,11000204,1100,2,4,"Astrub ","2-4","Temple of Ogrest","The cultist of Ogrest thrive here and they prove their devotions by being horrible to intruders. ","See stage_text",200,2000,7,5,3,107,"2^1.5^1.5^1",1037,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+38,,11000205,1100,2,5,"Astrub ","2-5","House of Destiny","Are you the one that destiny calls for? You have managed to come here and it proves your determination.","See stage_text",400,2000,8,6,3,107,"2^1.5^1.5^1",1038,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+39,,11000206,1100,2,6,"Astrub ","2-6","Blades of Furies","If you want to know the secret of the Dofus, you have to ask our blades first.","See stage_text",800,2000,9,7,3,107,"2^1.5^1.5^1",1039,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+40,,12000201,1200,2,1,"Amakna","2-1","Holey Forest","Rare powerful monsters are suddenly appearing and causing chaos. ","See stage_text",200,2000,7,5,3,108,"2^1.5^1.5^1",1040,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+41,,12000202,1200,2,2,"Amakna","2-2","Singing Forest","The forests are singing but it is a sad tone…","See stage_text",200,2000,7,5,3,108,"2^1.5^1.5^1",1041,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+42,,12000203,1200,2,3,"Amakna","2-3","Hugo's Meadows","A sense of tranquil peace can be felt in this place.","See stage_text",200,2000,7,5,3,108,"2^1.5^1.5^1",1042,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+43,,12000204,1200,2,4,"Amakna","2-4","Farle's Fields","This is hostile territorities. Many adventurers have been lost here and disappeared forever.","See stage_text",200,2000,7,5,3,108,"2^1.5^1.5^1",1043,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+44,,12000205,1200,2,5,"Amakna","2-5","The Fields of Dust","What has happened to this place…","See stage_text",400,2000,8,6,3,108,"2^1.5^1.5^1",1044,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+45,,12000206,1200,2,6,"Amakna","2-6","Tower Defense","The lights of a chromium orb can be seen here…","See stage_text",800,2000,9,7,3,108,"2^1.5^1.5^1",1045,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+46,,13000201,1300,2,1,"Bonta","2-1","Trials of Light","The Keepers of Light are not going to reveal their secrets to anyone claiming to be a hero.","See stage_text",200,2000,7,5,3,109,"2^1.5^1.5^1",1046,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+47,,13000202,1300,2,2,"Bonta","2-2","Temple of the Oracle ","As a sanctuary of the Divine City, this place is one of the most mysterious. ","See stage_text",200,2000,7,5,3,109,"2^1.5^1.5^1",1047,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+48,,13000203,1300,2,3,"Bonta","2-3","Hidden Gateway","Looks dangerous but there is a strong presence that is pulling you to it…","See stage_text",200,2000,7,5,3,109,"2^1.5^1.5^1",1048,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+49,,13000204,1300,2,4,"Bonta","2-4","Luminous Field","What could have cause these fields to glow?","See stage_text",200,2000,7,5,3,109,"2^1.5^1.5^1",1049,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+50,,13000205,1300,2,5,"Bonta","2-5","Tower of Light","The Tower of Light is also called the Tower of the Lost Souls. ","See stage_text",400,2000,8,6,3,109,"2^1.5^1.5^1",1050,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+51,,13000206,1300,2,6,"Bonta","2-6","Keeper of the Light","Light in the Darkness. ","See stage_text",800,2000,9,7,3,109,"2^1.5^1.5^1",1051,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+52,,14000201,1400,2,1,"Brakmar ","2-1","City of Darkness","The vicinity seems to be filled with a terrible darkness.","See stage_text",200,2000,7,5,3,110,"2^1.5^1.5^1",1052,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+53,,14000202,1400,2,2,"Brakmar ","2-2","The Secret Cavern","This place is full of malice and desperate souls, working to minted Kamas everyday to ensure the wealth of Brakmar.","See stage_text",200,2000,7,5,3,110,"2^1.5^1.5^1",1053,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+54,,14000203,1400,2,3,"Brakmar ","2-3","Sidmote Moors","One of the most dangerous place in the territorities of Brakmar that even its citizens will not visit it…","See stage_text",200,2000,7,5,3,110,"2^1.5^1.5^1",1054,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+55,,14000204,1400,2,4,"Brakmar ","2-4","Brakmar Village","What? A village in the middle of the Sidmote Moors?","See stage_text",200,2000,7,5,3,110,"2^1.5^1.5^1",1055,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+56,,14000205,1400,2,5,"Brakmar ","2-5","Darkness Discovery","We are the Darkness…","See stage_text",400,2000,8,6,3,110,"2^1.5^1.5^1",1056,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+57,,14000206,1400,2,6,"Brakmar ","2-6","The Wheel of Time","They called themselves the Keepers of Time but they are actually trying to disrupt time…","See stage_text",800,2000,9,7,3,110,"2^1.5^1.5^1",1057,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+58,,15000201,1500,2,1,"Sufokia","2-1","The Mysterious Waterhole","The waters here have turned bitter and undrinkable…","See stage_text",200,2000,7,5,3,111,"2^1.5^1.5^1",1058,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+59,,15000202,1500,2,2,"Sufokia","2-2","The Other Side","It appears to be a wyrm hole. How can it be?","See stage_text",200,2000,7,5,3,111,"2^1.5^1.5^1",1059,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+60,,15000203,1500,2,3,"Sufokia","2-3","The Mist","Where did these mist comes from? These seem to be a taint of evil in this mist…","See stage_text",200,2000,7,5,3,111,"2^1.5^1.5^1",1060,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+61,,15000204,1500,2,4,"Sufokia","2-4","Gutted Plaza","The dead here are like fishes that are gutted…work of the Eca?","See stage_text",200,2000,7,5,3,111,"2^1.5^1.5^1",1061,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+62,,15000205,1500,2,5,"Sufokia","2-5","The Misty Walkway","A mysterious force is pulling you to the other side. ","See stage_text",400,2000,8,6,3,111,"2^1.5^1.5^1",1062,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+63,,15000206,1500,2,6,"Sufokia","2-6","King of the Snappers","A trembling fear can be felt by all that approaches…","See stage_text",800,2000,9,7,3,111,"2^1.5^1.5^1",1063,"15^3.5^3.5^1",1,127,"3^3^3^1",1002
+64,,11000301,1100,3,1,"Astrub ","3-1","Divine Light","Heroes are gathering but so are the invading monsters.","See stage_text",400,3000,8,6,4,112,"3^2^^2^1",1064,"20^4^4^1",1,127,"3^3^3^1",1003
+65,,11000302,1100,3,2,"Astrub ","3-2","House of Destiny","Hero, your destiny guides you but is that the best that you can do?","See stage_text",400,3000,8,6,4,112,"3^2^^2^1",1065,"20^4^4^1",1,127,"3^3^3^1",1003
+66,,11000303,1100,3,3,"Astrub ","3-3","Forbidden Ground","Entry strictly forbidden to all non-builders!","See stage_text",400,3000,8,6,4,112,"3^2^^2^1",1066,"20^4^4^1",1,127,"3^3^3^1",1003
+67,,11000304,1100,3,4,"Astrub ","3-4","Underground Error","To avoid the reoccurence of past errors, adventurers are requested to continue on their way.","See stage_text",400,3000,8,6,4,112,"3^2^^2^1",1067,"20^4^4^1",1,127,"3^3^3^1",1003
+68,,11000305,1100,3,5,"Astrub ","3-5","A Message for All","Leave it to the professionals to build a better future for us all. ","See stage_text",800,3000,9,7,4,112,"3^2^^2^1",1068,"20^4^4^1",1,127,"3^3^3^1",1003
+69,,11000306,1100,3,6,"Astrub ","3-6","Access Point","The battle at Access Point is crucial unravel the mysteries of the malicious force.","See stage_text",1600,3000,10,8,4,112,"3^2^^2^1",1069,"20^4^4^1",1,127,"3^3^3^1",1003
+70,,12000301,1200,3,1,"Amakna","3-1","Dungeon of Destiny","So that is what the key of destiny is for.","See stage_text",400,3000,8,6,4,113,"3^2^^2^1",1070,"20^4^4^1",1,127,"3^3^3^1",1003
+71,,12000302,1200,3,2,"Amakna","3-2","The Sword of Destiny","Your destiny shall begin here! ","See stage_text",400,3000,8,6,4,113,"3^2^^2^1",1071,"20^4^4^1",1,127,"3^3^3^1",1003
+72,,12000303,1200,3,3,"Amakna","3-3","Cruel Intentions","Something isn't too right here and overwhelming sense of wickedness is in the air…","See stage_text",400,3000,8,6,4,113,"3^2^^2^1",1072,"20^4^4^1",1,127,"3^3^3^1",1003
+73,,12000304,1200,3,4,"Amakna","3-4","Viral Infections","The entire place stink of fish stench. ","See stage_text",400,3000,8,6,4,113,"3^2^^2^1",1073,"20^4^4^1",1,127,"3^3^3^1",1003
+74,,12000305,1200,3,5,"Amakna","3-5","The Harvester Fields","All that is golden is not good. The fields are too ripe but where are the farmers?","See stage_text",800,3000,9,7,4,113,"3^2^^2^1",1074,"20^4^4^1",1,127,"3^3^3^1",1003
+75,,12000306,1200,3,6,"Amakna","3-6","The Lost Tower","This place gives off a creepy and evil presence. ","See stage_text",1600,3000,10,8,4,113,"3^2^^2^1",1075,"20^4^4^1",1,127,"3^3^3^1",1003
+76,,13000301,1300,3,1,"Bonta","3-1","The Ancient Battlefield","This ancient battlefield has long been forgotten except by a few…","See stage_text",400,3000,8,6,4,114,"3^2^^2^1",1076,"20^4^4^1",1,127,"3^3^3^1",1003
+77,,13000302,1300,3,2,"Bonta","3-2","The Sinister Hideout","It is a place for reviewing ideas by the Sinistrinity, a three member gang.","See stage_text",400,3000,8,6,4,114,"3^2^^2^1",1077,"20^4^4^1",1,127,"3^3^3^1",1003
+78,,13000303,1300,3,3,"Bonta","3-3","The Atta Grotto","It is the smallest of the low-level trio of mines in Bonta. ","See stage_text",400,3000,8,6,4,114,"3^2^^2^1",1078,"20^4^4^1",1,127,"3^3^3^1",1003
+79,,13000304,1300,3,4,"Bonta","3-4","Kandee Mines","Middle-sized of the low-level trio of mines in Bonta. More dangerous than Atta Grotto.","See stage_text",400,3000,8,6,4,114,"3^2^^2^1",1079,"20^4^4^1",1,127,"3^3^3^1",1003
+80,,13000305,1300,3,5,"Bonta","3-5","Craft Mines","The largest of the low-level trio of miones in Bonta. It is easy to get lost here…","See stage_text",800,3000,9,7,4,114,"3^2^^2^1",1080,"20^4^4^1",1,127,"3^3^3^1",1003
+81,,13000306,1300,3,6,"Bonta","3-6","The Tree of Light","The holy light of the Tree of Light is so comforting…","See stage_text",1600,3000,10,8,4,114,"3^2^^2^1",1081,"20^4^4^1",1,127,"3^3^3^1",1003
+82,,14000301,1400,3,1,"Brakmar ","3-1","The Dark Animus","Why is that the Dark Animus is giving off a familiar sense like that of a Dofus? Could it be…","See stage_text",400,3000,8,6,4,115,"3^2^^2^1",1082,"20^4^4^1",1,127,"3^3^3^1",1003
+83,,14000302,1400,3,2,"Brakmar ","3-2","Globblard Boulevard","This is the ancient graveyard of a lost species of powerful Gobballs that once dominated the lands.","See stage_text",400,3000,8,6,4,115,"3^2^^2^1",1083,"20^4^4^1",1,127,"3^3^3^1",1003
+84,,14000303,1400,3,3,"Brakmar ","3-3","Gnashville","Signs of an ancient battle seem to have taken place here and the atmosphere is still filled with the horrors of yesterday's battle.","See stage_text",400,3000,8,6,4,115,"3^2^^2^1",1084,"20^4^4^1",1,127,"3^3^3^1",1003
+85,,14000304,1400,3,4,"Brakmar ","3-4","The Fields of the Lost Souls","A sinister betrayal has once taken place here and the place is still filled with the cries of these angrish souls.","See stage_text",400,3000,8,6,4,115,"3^2^^2^1",1085,"20^4^4^1",1,127,"3^3^3^1",1003
+86,,14000305,1400,3,5,"Brakmar ","3-5","Ancient Brakmar","There are many dark secrets in this place…","See stage_text",800,3000,9,7,4,115,"3^2^^2^1",1086,"20^4^4^1",1,127,"3^3^3^1",1003
+87,,14000306,1400,3,6,"Brakmar ","3-6","The True Nature","The true nature of Brakmar is not for the hearts of the weak.","See stage_text",1600,3000,10,8,4,115,"3^2^^2^1",1087,"20^4^4^1",1,127,"3^3^3^1",1003
+88,,15000301,1500,3,1,"Sufokia","3-1","The Vestige Residue","These are once green fields and meadows and now it is just waters.","See stage_text",400,3000,8,6,4,116,"3^2^^2^1",1088,"20^4^4^1",1,127,"3^3^3^1",1003
+89,,15000302,1500,3,2,"Sufokia","3-2","Ships Graveyard","So many sunken ships, what terrible destructions...","See stage_text",400,3000,8,6,4,116,"3^2^^2^1",1089,"20^4^4^1",1,127,"3^3^3^1",1003
+90,,15000303,1500,3,3,"Sufokia","3-3","The Black Winds","The mountains echo with the sounds of the eerie black winds…","See stage_text",400,3000,8,6,4,116,"3^2^^2^1",1090,"20^4^4^1",1,127,"3^3^3^1",1003
+91,,15000304,1500,3,4,"Sufokia","3-4","The Secret Haven","The dark wind howls in a manner that is unseen in the rest of the world.","See stage_text",400,3000,8,6,4,116,"3^2^^2^1",1091,"20^4^4^1",1,127,"3^3^3^1",1003
+92,,15000305,1500,3,5,"Sufokia","3-5","The Ogrest Birthplace","This is where the Ogrest is said to be born…","See stage_text",800,3000,9,7,4,116,"3^2^^2^1",1092,"20^4^4^1",1,127,"3^3^3^1",1003
+93,,15000306,1500,3,6,"Sufokia","3-6","The Abyss of Dathura","This is where Dathura, Ogrest's love is said to have fallen. ","See stage_text",1600,3000,10,8,4,116,"3^2^^2^1",1093,"20^4^4^1",1,127,"3^3^3^1",1003
+94,,11000401,1100,4,1,"Astrub ","4-1","The Diaspora","The free territorities of Astrub is in a mess.","See stage_text",800,4000,9,6,5,117,"4^2.5^2.5^1",1094,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+95,,11000402,1100,4,2,"Astrub ","4-2","Times of Trouble","We have fallen into an era of darkness. Only a hero can dispel the darkness.","See stage_text",800,4000,9,6,5,117,"4^2.5^2.5^1",1095,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+96,,11000403,1100,4,3,"Astrub ","4-3","The Eye of the Storm","Only a hero can lift the despair that is surrounding this storm…","See stage_text",800,4000,9,6,5,117,"4^2.5^2.5^1",1096,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+97,,11000404,1100,4,4,"Astrub ","4-4","City of the Rogue","An uneasy feeling fills the air around here causing even the bravest to lose their courage.","See stage_text",800,4000,9,6,5,117,"4^2.5^2.5^1",1097,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+98,,11000405,1100,4,5,"Astrub ","4-5","Astrub Center","After a great difficulty, you have finally fought your way to the Astrub Center.","See stage_text",1600,4000,10,7,5,117,"4^2.5^2.5^1",1098,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+99,,11000406,1100,4,6,"Astrub ","4-6","Great Impass","Hero, stand on your ground! Do not be fearful! ","See stage_text",3200,4000,12,8,5,117,"4^2.5^2.5^1",1099,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+100,,12000401,1200,4,1,"Amakna","4-1","Farle Forest","Beware, much of the this place is still virgin forest.","See stage_text",800,4000,9,6,5,118,"4^2.5^2.5^1",1100,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+101,,12000402,1200,4,2,"Amakna","4-2","The Hidden Garden","What is this place? It is not on the map…","See stage_text",800,4000,9,6,5,118,"4^2.5^2.5^1",1101,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+102,,12000403,1200,4,3,"Amakna","4-3","The Garden Paradise","Who would believe that such a place would exist in Amakna.","See stage_text",800,4000,9,6,5,118,"4^2.5^2.5^1",1102,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+103,,12000404,1200,4,4,"Amakna","4-4","The Golden Apple","You have been warned not to eat of the golden apple in the middle…","See stage_text",800,4000,9,6,5,118,"4^2.5^2.5^1",1103,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+104,,12000405,1200,4,5,"Amakna","4-5","Singing Fields","A truly magnificent place but it did not ease the heavy burden in your mind.","See stage_text",1600,4000,10,7,5,118,"4^2.5^2.5^1",1104,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+105,,12000406,1200,4,6,"Amakna","4-6","The Treechnid Empire","It is so unbelievable to find so many of these Treechnids here…","See stage_text",3200,4000,12,8,5,118,"4^2.5^2.5^1",1105,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+106,,13000401,1300,4,1,"Bonta","4-1","Hero Field","Unspeakable horrors thrive in this place. You hardly believe that this is Bonta.","See stage_text",800,4000,9,6,5,119,"4^2.5^2.5^1",1106,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+107,,13000402,1300,4,2,"Bonta","4-2","Blue and the White","Tall marbles columns can be seen in these ruins, a reminder of a past civilization.","See stage_text",800,4000,9,6,5,119,"4^2.5^2.5^1",1107,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+108,,13000403,1300,4,3,"Bonta","4-3","The Ancient Forgotten City","The ruins of this city hide a mighty secret which is only revealable to the brave.","See stage_text",800,4000,9,6,5,119,"4^2.5^2.5^1",1108,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+109,,13000404,1300,4,4,"Bonta","4-4","The Temple of the Gods","Once a divine dedication to the Gods but now a cursed place…","See stage_text",800,4000,9,6,5,119,"4^2.5^2.5^1",1109,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+110,,13000405,1300,4,5,"Bonta","4-5","The Relic of the Gods","The mighty whip of the Gods, to punish all heretics. ","See stage_text",1600,4000,10,7,5,119,"4^2.5^2.5^1",1110,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+111,,13000406,1300,4,6,"Bonta","4-6","The Shrine of Ogrest","This is, this is the Shrine of Ogrest? In Bonta!?","See stage_text",3200,4000,12,8,5,119,"4^2.5^2.5^1",1111,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+112,,14000401,1400,4,1,"Brakmar ","4-1","The Anvil","Only a high ranking citizen of Brakmar can access. All intruders must be vanquished!","See stage_text",800,4000,9,6,5,120,"4^2.5^2.5^1",1112,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+113,,14000402,1400,4,2,"Brakmar ","4-2","The Brakmar Council","A fair trial will be given to you if you do not resist…","See stage_text",800,4000,9,6,5,120,"4^2.5^2.5^1",1113,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+114,,14000403,1400,4,3,"Brakmar ","4-3","The Finger of the God","This ancient relic is able to stop Ogrest…for a while.","See stage_text",800,4000,9,6,5,120,"4^2.5^2.5^1",1114,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+115,,14000404,1400,4,4,"Brakmar ","4-4","Return to Power","Everyone is bowing to Ogrest nowadays…","See stage_text",800,4000,9,6,5,120,"4^2.5^2.5^1",1115,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+116,,14000405,1400,4,5,"Brakmar ","4-5","The Secret Place","A place so secret that no one knows its exact location.","See stage_text",1600,4000,10,7,5,120,"4^2.5^2.5^1",1116,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+117,,14000406,1400,4,6,"Brakmar ","4-6","The Divine Forge","No one is allowed to the inner santuary and will be allowed to live.","See stage_text",3200,4000,12,8,5,120,"4^2.5^2.5^1",1117,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+118,,15000401,1500,4,1,"Sufokia","4-1","The Forbidden Canyon","Also called the forbidden grounds, no one has ever survive a trip down there…","See stage_text",800,4000,9,6,5,121,"4^2.5^2.5^1",1118,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+119,,15000402,1500,4,2,"Sufokia","4-2","The Cavern of the Gods","Even Ogrest dare not disturb the resting ground of the Gods here. How dare you!","See stage_text",800,4000,9,6,5,121,"4^2.5^2.5^1",1119,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+120,,15000403,1500,4,3,"Sufokia","4-3","Bridge of the Lost","It is where the lost souls go to the other side of the world.","See stage_text",800,4000,9,6,5,121,"4^2.5^2.5^1",1120,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+121,,15000404,1500,4,4,"Sufokia","4-4","The Paradise","Beneath the wondrous beauty lies fierce guardians….","See stage_text",800,4000,9,6,5,121,"4^2.5^2.5^1",1121,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+122,,15000405,1500,4,5,"Sufokia","4-5","The Lost Island","The final clue lies here or your final destiny.","See stage_text",1600,4000,10,7,5,121,"4^2.5^2.5^1",1122,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+123,,15000406,1500,4,6,"Sufokia","4-6","Ogrest's Chaos","Source of the Ogrest Chaos","See stage_text",3200,4000,12,8,5,121,"4^2.5^2.5^1",1123,"25^4.5^4.5^1",1,127,"3^3^3^1",1004
+124,,11000501,1100,5,1,"Astrub ","5-1","Destiny Begins","Hero, we need you. We are under attack!","See stage_text",1600,5000,10,7,6,122,"5^3^3^1",1124,"30^5^5^1",1,127,"3^3^3^1",1005
+125,,11000502,1100,5,2,"Astrub ","5-2","The Burning City","The oppressing presence of the enemy are everywhere around us!","See stage_text",1600,5000,10,7,6,122,"5^3^3^1",1125,"30^5^5^1",1,127,"3^3^3^1",1005
+126,,11000503,1100,5,3,"Astrub ","5-3","Fighting for Victory","We shall not bow to the invaders. We must overcome them with our spirits!","See stage_text",1600,5000,10,7,6,122,"5^3^3^1",1126,"30^5^5^1",1,127,"3^3^3^1",1005
+127,,11000504,1100,5,4,"Astrub ","5-4","Undying Fighting Spirits","Astrub shall not be the first city to fall. We must endure…","See stage_text",1600,5000,10,7,6,122,"5^3^3^1",1127,"30^5^5^1",1,127,"3^3^3^1",1005
+128,,11000505,1100,5,5,"Astrub ","5-5","Comforting Light","Hero, we have come so far to give up. We need your courage…","See stage_text",3200,5000,12,8,6,122,"5^3^3^1",1128,"30^5^5^1",1,127,"3^3^3^1",1005
+129,,11000506,1100,5,6,"Astrub ","5-6","The Final Stand","We are making a final stand now. This is a fight for survival…","See stage_text",6400,5000,14,9,6,122,"5^3^3^1",1129,"30^5^5^1",1,127,"3^3^3^1",1005
+130,,12000501,1200,5,1,"Amakna","5-1","The Amakna Outpost","Fierce fightings are everywhere. Hero, you are finally here…","See stage_text",1600,5000,10,7,6,123,"5^3^3^1",1130,"30^5^5^1",1,127,"3^3^3^1",1005
+131,,12000502,1200,5,2,"Amakna","5-2","The Stone Fort","The enemy has taken over this fort. We must retake this crucial defense line.","See stage_text",1600,5000,10,7,6,123,"5^3^3^1",1131,"30^5^5^1",1,127,"3^3^3^1",1005
+132,,12000503,1200,5,3,"Amakna","5-3","The Green Fields","Be wary of ambushes. This place is the perfect place for setting ambushes.","See stage_text",1600,5000,10,7,6,123,"5^3^3^1",1132,"30^5^5^1",1,127,"3^3^3^1",1005
+133,,12000504,1200,5,4,"Amakna","5-4","The Resistance Force","Hero, you have finally come. We are desperate for reinforcements…","See stage_text",1600,5000,10,7,6,123,"5^3^3^1",1133,"30^5^5^1",1,127,"3^3^3^1",1005
+134,,12000505,1200,5,5,"Amakna","5-5","The Burning Spirits","The enemy is strong and we are desperate…","See stage_text",3200,5000,12,8,6,123,"5^3^3^1",1134,"30^5^5^1",1,127,"3^3^3^1",1005
+135,,12000506,1200,5,6,"Amakna","5-6","Solace","This is the final battle already. For Amakna!","See stage_text",6400,5000,14,9,6,123,"5^3^3^1",1135,"30^5^5^1",1,127,"3^3^3^1",1005
+136,,13000501,1300,5,1,"Bonta","5-1","Destiny Renews","Fear spread throughout the Divine City of Bonta. You have finally arrived…","See stage_text",1600,5000,10,7,6,124,"5^3^3^1",1136,"30^5^5^1",1,127,"3^3^3^1",1005
+137,,13000502,1300,5,2,"Bonta","5-2","The Guardians of Bonta","Today, we proclaim you as the Guardian of Bonta. Go now and do not disappoint us.","See stage_text",1600,5000,10,7,6,124,"5^3^3^1",1137,"30^5^5^1",1,127,"3^3^3^1",1005
+138,,13000503,1300,5,3,"Bonta","5-3","The Armourers ","These are traitors. The secrets of our armors are given to Ogrest's forces…stop them please.","See stage_text",1600,5000,10,7,6,124,"5^3^3^1",1138,"30^5^5^1",1,127,"3^3^3^1",1005
+139,,13000504,1300,5,4,"Bonta","5-4","The Inner Sanctum","The cronies of Ogrest are everywhere, even deep in the hearts of Bonta…","See stage_text",1600,5000,10,7,6,124,"5^3^3^1",1139,"30^5^5^1",1,127,"3^3^3^1",1005
+140,,13000505,1300,5,5,"Bonta","5-5","The Traitors","You shall not live to tell others of our betrayal!","See stage_text",3200,5000,12,8,6,124,"5^3^3^1",1140,"30^5^5^1",1,127,"3^3^3^1",1005
+141,,13000506,1300,5,6,"Bonta","5-6","Bonta In Ruins","Fire and ashes now surrounded the city. We pray for deliverance…","See stage_text",6400,5000,14,9,6,124,"5^3^3^1",1141,"30^5^5^1",1,127,"3^3^3^1",1005
+142,,14000501,1400,5,1,"Brakmar ","5-1","The Broken Walls of Brakmar","The high walls of Brakmar are shattered and the invaders are wrecking havoc…","See stage_text",1600,5000,10,7,6,125,"5^3^3^1",1142,"30^5^5^1",1,127,"3^3^3^1",1005
+143,,14000502,1400,5,2,"Brakmar ","5-2","The defense of Brakmar","Hero, we proclaim you a Defender of Brakmar. You must aid us and we shall not forget you for all eternality!","See stage_text",1600,5000,10,7,6,125,"5^3^3^1",1143,"30^5^5^1",1,127,"3^3^3^1",1005
+144,,14000503,1400,5,3,"Brakmar ","5-3","The Treasury of Brakmar","Our hard earned kama are all stolen by the minions of Ogrest. Our economy is in ruins…","See stage_text",1600,5000,10,7,6,125,"5^3^3^1",1144,"30^5^5^1",1,127,"3^3^3^1",1005
+145,,14000504,1400,5,4,"Brakmar ","5-4","The Last Fortress","We can't extend our hold anymore. You are our last desperate hope…","See stage_text",1600,5000,10,7,6,125,"5^3^3^1",1145,"30^5^5^1",1,127,"3^3^3^1",1005
+146,,14000505,1400,5,5,"Brakmar ","5-5","Anvil and the Forge","Our weapons of steel will drown our enemy's pride! ","See stage_text",3200,5000,12,8,6,125,"5^3^3^1",1146,"30^5^5^1",1,127,"3^3^3^1",1005
+147,,14000506,1400,5,6,"Brakmar ","5-6","Brakmar in flames","Brakmar is in ruins but our determination to fight will never be vanquished! ","See stage_text",6400,5000,14,9,6,125,"5^3^3^1",1147,"30^5^5^1",1,127,"3^3^3^1",1005
+148,,15000501,1500,5,1,"Sufokia","5-1","Ogrest Keep","When did this diablolic keep first appear?. It is so out of the blue. This keep must be taken down at all costs. Onward!","See stage_text",1600,5000,10,7,6,126,"5^3^3^1",1148,"30^5^5^1",1,127,"3^3^3^1",1005
+149,,15000502,1500,5,2,"Sufokia","5-2","Fight for Survival","The free lands are at stake here if Ogrest's champions take over Sufokia. ","See stage_text",1600,5000,10,7,6,126,"5^3^3^1",1149,"30^5^5^1",1,127,"3^3^3^1",1005
+150,,15000503,1500,5,3,"Sufokia","5-3","Free Sufokia","Sufokia is under a terrible yoke. Hero, you are finally here…","See stage_text",1600,5000,10,7,6,126,"5^3^3^1",1150,"30^5^5^1",1,127,"3^3^3^1",1005
+151,,15000504,1500,5,4,"Sufokia","5-4","The Blessings of the Nations","May the divine lights of the Gods be on you. Take courage and do not be afraid.","See stage_text",1600,5000,10,7,6,126,"5^3^3^1",1151,"30^5^5^1",1,127,"3^3^3^1",1005
+152,,15000505,1500,5,5,"Sufokia","5-5","Aftershock","Many have fallen and many more perished. This is our last stand now…","See stage_text",3200,5000,12,8,6,126,"5^3^3^1",1152,"30^5^5^1",1,127,"3^3^3^1",1005
+153,,15000506,1500,5,6,"Sufokia","5-6","The Great Confrontation","Nobody dares to confront Ogrest, not even the Gods.","See stage_text",6400,5000,14,9,6,126,"5^3^3^1",1153,"30^5^5^1",1,127,"3^3^3^1",1005
+154,,16000101,1600,1,1,"XP Bonus Stage","1-1","XP Stage Normal",,"See stage_text",,,10,5,2,128,"3^3^3^1",1154,"10^3^3^1",0,127,"3^3^3^1",
+155,,16000102,1600,1,2,"XP Bonus Stage","1-2","XP Stage Elite",,"See stage_text",,,20,5,3,129,"3^3^3^1",1155,"20^4^4^1",0,127,"3^3^3^1",
+156,,16000103,1600,1,3,"XP Bonus Stage","1-3","XP Stage Master",,"See stage_text",,,30,5,4,130,"3^3^3^1",1156,"30^5^5^1",0,127,"3^3^3^1",
+157,,0,,,,,,,,,,,,,,,,,,,,,
+158,,0,,,,,,,,,,,,,,,,,,,,,
+159,,0,,,,,,,,,,,,,,,,,,,,,
+160,,0,,,,,,,,,,,,,,,,,,,,,
+161,,0,,,,,,,,,,,,,,,,,,,,,
+162,,0,,,,,,,,,,,,,,,,,,,,,
+163,,0,,,,,,,,,,,,,,,,,,,,,
+164,,0,,,,,,,,,,,,,,,,,,,,,
+165,,0,,,,,,,,,,,,,,,,,,,,,
+166,,0,,,,,,,,,,,,,,,,,,,,,
+167,,0,,,,,,,,,,,,,,,,,,,,,
+168,,0,,,,,,,,,,,,,,,,,,,,,
+169,,0,,,,,,,,,,,,,,,,,,,,,
+170,,0,,,,,,,,,,,,,,,,,,,,,
+171,,0,,,,,,,,,,,,,,,,,,,,,
+172,,0,,,,,,,,,,,,,,,,,,,,,
+173,,0,,,,,,,,,,,,,,,,,,,,,
+174,,0,,,,,,,,,,,,,,,,,,,,,
+175,,0,,,,,,,,,,,,,,,,,,,,,
+176,,0,,,,,,,,,,,,,,,,,,,,,
+177,,0,,,,,,,,,,,,,,,,,,,,,
+178,,0,,,,,,,,,,,,,,,,,,,,,
+179,,0,,,,,,,,,,,,,,,,,,,,,
+180,,0,,,,,,,,,,,,,,,,,,,,,
+181,,0,,,,,,,,,,,,,,,,,,,,,
+182,,0,,,,,,,,,,,,,,,,,,,,,
+183,,0,,,,,,,,,,,,,,,,,,,,,
+184,,0,,,,,,,,,,,,,,,,,,,,,
+185,,0,,,,,,,,,,,,,,,,,,,,,
+186,,0,,,,,,,,,,,,,,,,,,,,,
+187,,0,,,,,,,,,,,,,,,,,,,,,
+188,,0,,,,,,,,,,,,,,,,,,,,,
+189,,0,,,,,,,,,,,,,,,,,,,,,
+190,,0,,,,,,,,,,,,,,,,,,,,,
+191,,0,,,,,,,,,,,,,,,,,,,,,
+192,,0,,,,,,,,,,,,,,,,,,,,,
+193,,0,,,,,,,,,,,,,,,,,,,,,
+194,,0,,,,,,,,,,,,,,,,,,,,,
+195,,0,,,,,,,,,,,,,,,,,,,,,
+196,,0,,,,,,,,,,,,,,,,,,,,,
+197,,0,,,,,,,,,,,,,,,,,,,,,
+198,,0,,,,,,,,,,,,,,,,,,,,,
+199,,0,,,,,,,,,,,,,,,,,,,,,
+200,,0,,,,,,,,,,,,,,,,,,,,,
