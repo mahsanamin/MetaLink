@@ -8,4 +8,5 @@ python class_type_conv.py > ../converted_data/class_type.csv
 python unit_growth_conv.py > ../converted_data/unit_growth.csv
 python element_mods_conv.py > ../converted_data/element_mods.csv
 python attack_type_conv.py > ../converted_data/attack_type.csv
+python fusion_stats_conv.py > ../converted_data/fusion_stats.csv
 echo done.

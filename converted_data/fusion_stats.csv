@@ -1,0 +1,2 @@
+id | (int),hp_fusion | hpf(int),atk_fusion | atkf (int),rec_fusion | recf (int),def_fusion | deff (int),
+1,10,10,10,10
