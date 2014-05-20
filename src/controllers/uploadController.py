@@ -24,17 +24,26 @@ class UploadController:
         
     def postHandler(self,renderer):
         
-        web.header('Content-type','application/octet-stream')
-        web.header('Content-transfer-encoding','base64') 
+        form = web.input(userfile={},comment=None)
         
-        form = web.input(userfile=None,comment=None) 
+        submittedFileName = str(form['userfile'].filename)
+        
+        print "file name is %s " % (submittedFileName)
+        
+        if Util.getIndexOfStringInString(submittedFileName, ".csv", None):
+            pass # do stuff with csv to xlsx
+        
         tempDir=Util.createDirForTempFiles()
         result = "Success!"
+        
+        isError = 0
         
         print ("temp dir created " + str(tempDir))
         
         try:
-            filePath= Util.createTempFileWithData(tempDir,form.userfile)
+            
+            filePath= Util.createTempFileWithData(tempDir,form['userfile'].value)
+            
             print("File Path is " + str(filePath))
             workBook=Util.openWorkBook(filePath)
             result = Util.dictToJson(self.workBookToJson(workBook))
@@ -45,21 +54,24 @@ class UploadController:
                 fileName = "data.py"
             
             attachmentName =  'attachment; filename="%s" ' % (fileName)
+            web.header('Content-type','application/octet-stream')
+            web.header('Content-transfer-encoding','base64')
             web.header('Content-Disposition',attachmentName)
             
             return result
             
         except Exception, e:
+            isError = 1
             print "IN Excepetion"
             Util.printStackTraceInConsole()
             result = "Failed %s " % str(e)
-            print str(e)
+            print str("result it %s " % result)
         finally:
             Util.deleteTempDir(tempDir)
         
+        print "here here should return the result"
         
-        
-        return renderer.uploader(0,result)
+        return renderer.uploader(isError,result)
         
     def workBookToJson(self,workBook):
         
@@ -168,7 +180,11 @@ class UploadController:
             if(row_index==0):#skip the first row
                 continue
             
-            idKeyValue = long(float(Util.cellVal(currSheet, row_index, col))) # pick the 0th column value
+            try:
+                idKeyValue = long(float(Util.cellVal(currSheet, row_index, col))) # pick the 0th column value
+            except:
+                raise Exception("Exception while working with Sheet ('%s')  Row_No=%i and Col=%i -------- Celll_Value =%s " % (currSheet.name,row_index, col, str(Util.cellVal(currSheet, row_index, col))))
+                
             currRow = dataDict[str(idKeyValue)] = {}
             for column in arrColumns:
                 cellValue = Util.cellVal(currSheet, row_index, col+1)

@@ -43,13 +43,16 @@ class Util():
     @staticmethod
     def cellVal(currSheet,row_index,col_index):
         #supports unicoded
-        cell_type = currSheet.cell_type(row_index, col_index) # rownum,colnum
-        cell_value = currSheet.cell_value(row_index, col_index)
+        try:
+            cell_type = currSheet.cell_type(row_index, col_index) # rownum,colnum
+            cell_value = currSheet.cell_value(row_index, col_index)
         
-        if(cell_type == xlrd.XL_CELL_TEXT):
-            return str(cell_value.encode("utf-8"))
+            if(cell_type == xlrd.XL_CELL_TEXT):
+                return str(cell_value.encode("utf-8"))
         
-        return str(cell_value)
+            return str(cell_value)
+        except:
+            print "Exception while working with Row=%i and Col=%i -------- Cell_Type = %s and Celll_Value =%s " % (row_index, col_index, str(cell_type), str(cell_value))
         
     @staticmethod
     def checkColumnNameStyle(colName):
@@ -187,4 +190,22 @@ class Util():
         else:
             return aValue
 
+    @staticmethod
+    def getArrIndexForValue(arr,value,default_value=None):
+        try:
+            return arr.index(value)
+        except ValueError:
+            return default_value
+        
+        return default_value
+    
+    @staticmethod
+    def getIndexOfStringInString(aSourceString,aSearchableString,aDefaultValue=None):
+        try:
+            return aSourceString.index(aSearchableString)
+        except ValueError:
+            return aDefaultValue
+        
+        return aDefaultValue
+    
         
