@@ -1,7 +1,10 @@
 class Rules():
 
     metaSheetName = "meta"
+    
     idColumnName  = "_id"
+    
+    
     keyName       = "key"
     dataName      = "data"
     

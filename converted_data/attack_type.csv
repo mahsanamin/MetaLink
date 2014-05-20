@@ -1,5 +1,0 @@
-id | (int),name | (string),desc | (string),
-1,"Melee","Move and attack"
-2,"Leapt","Hop and attack"
-3,"Caster","Attack on the same spot"
-4,"Stealth","Vanish and attack"
