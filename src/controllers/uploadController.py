@@ -19,7 +19,6 @@ class MField():
     
 class UploadController:
     def getHandler(self,renderer):
-        print "in uploader"
         return renderer.uploader(0,"Uploader")
         
     def postHandler(self,renderer):
@@ -27,8 +26,6 @@ class UploadController:
         form = web.input(userfile={},comment=None)
         
         submittedFileName = str(form['userfile'].filename)
-        
-        print "file name is %s " % (submittedFileName)
         
         if Util.getIndexOfStringInString(submittedFileName, ".csv", None):
             pass # do stuff with csv to xlsx
@@ -38,18 +35,20 @@ class UploadController:
         
         isError = 0
         
-        print ("temp dir created " + str(tempDir))
-        
         try:
             
             filePath= Util.createTempFileWithData(tempDir,form['userfile'].value)
             
-            print("File Path is " + str(filePath))
             workBook=Util.openWorkBook(filePath)
             result = Util.dictToJson(self.workBookToJson(workBook))
+            fileName = None
             
-            metaSheet=workBook.sheet_by_name(Rules.metaSheetName)
-            fileName = Util.cellVal(metaSheet,0,1)
+            try:
+                metaSheet=workBook.sheet_by_name(Rules.metaSheetName)
+                fileName = Util.cellVal(metaSheet,0,1)
+            except:
+                None
+                
             if(not fileName):
                 fileName = "data.py"
             
@@ -69,8 +68,6 @@ class UploadController:
         finally:
             Util.deleteTempDir(tempDir)
         
-        print "here here should return the result"
-        
         return renderer.uploader(isError,result)
         
     def workBookToJson(self,workBook):
@@ -83,14 +80,14 @@ class UploadController:
                 continue
             # do code here
             currSheet=workBook.sheet_by_name(sheetName)
-            print "sheet name is " + str(sheetName)
-            print "no of rows are " + str(currSheet.nrows)
-            print "no of cols are " + str(currSheet.ncols)
             
             tableStartCell = self.findTablesInSheet(currSheet)
-            print "table cell is " + str(tableStartCell.colIndex)
+            sheetDict = None
             
-            sheetDict = self.tableToDictionary(currSheet,tableStartCell.rowIndex, tableStartCell.colIndex)
+            if(tableStartCell):
+                sheetDict = self.tableToDictionary(currSheet,tableStartCell.rowIndex, tableStartCell.colIndex)
+            else:
+                print "Warning skipping sheet %s " % sheetName
             
             if(sheetDict):
                 totalDict[sheetName] = sheetDict 
@@ -101,7 +98,6 @@ class UploadController:
         for row_index in xrange(currSheet.nrows):
             for col_index in xrange(currSheet.ncols):
                 cellValue = Util.cellVal(currSheet, row_index, col_index)
-                print cellValue
                 if cellValue == Rules.idColumnName: #means table is started (in case if sheet has multiple tables)
                     return MCell(rowIndex=row_index,colIndex=col_index)
                 
@@ -114,7 +110,6 @@ class UploadController:
         #verify field pattern first
         aRawColumn = aRawColumn.replace(" ","") # remove spaces for the column
         
-        print ("===>raw column is %s " %aRawColumn)
         columnStyleOk = Util.checkColumnNameStyle(aRawColumn)
         field = None
         if(columnStyleOk):
@@ -152,48 +147,56 @@ class UploadController:
             cellValue = Util.cellVal(currSheet, rowIndex, colIndex)
             
             field = None
-            if(cellValue != Rules.idColumnName):
-                
+            
+            if(cellValue == Rules.idColumnName):
+                field = MField()
+                field.fieldName = Rules.idColumnName
+                field.fieldType = "int"
+            else:
                 field = self.extractField(cellValue)
                 if(not field):
-                    print "Warnning --- Ignore column '%s'" % cellValue
+                    print "Sheet::%s   Warnning --- Ignore column '%s'" % (currSheet.name,cellValue)
+                    colIndex = colIndex + 1
                     continue
                 
-                anyFieldAlready = Util.getDictValue(dictColumns, field.fieldName)
-                
-                if(anyFieldAlready):
-                    raise Exception("The filed %s is already available kindly rename it to something else for this sheet col=(%d) " % (field.fieldName,colIndex ))
-                
-                dictColumns[field.fieldName] = field.fieldType
-                arrColumns.append(field)
+            anyFieldAlready = Util.getDictValue(dictColumns, field.fieldName)
+            
+            if(anyFieldAlready):
+                raise Exception("Sheet %s The filed %s is already available kindly rename it to something else for this sheet col=(%d) " % (currSheet.name, field.fieldName,colIndex ))
+            
+            dictColumns[field.fieldName] = field.fieldType
+            arrColumns.append(field)
                 
                 #print "field name is %s and field type is %s " % (field.fieldName,str(field.fieldType)) 
-                    
             colIndex = colIndex + 1
             
         mainDataDict = {}
         dataDict = mainDataDict[Rules.dataName] = {}
         
         for row_index in xrange(currSheet.nrows): 
-            
             col = 0
             if(row_index==0):#skip the first row
                 continue
             
             try:
                 idKeyValue = long(float(Util.cellVal(currSheet, row_index, col))) # pick the 0th column value
-            except:
-                raise Exception("Exception while working with Sheet ('%s')  Row_No=%i and Col=%i -------- Celll_Value =%s " % (currSheet.name,row_index, col, str(Util.cellVal(currSheet, row_index, col))))
+            except Exception , e:
+                raise Exception("Exception %s while working with Sheet ('%s')  Row_No=%i and Col=%i -------- Celll_Value =%s " % (str(e), currSheet.name,row_index, col, str(Util.cellVal(currSheet, row_index, col))))
                 
             currRow = dataDict[str(idKeyValue)] = {}
             for column in arrColumns:
-                cellValue = Util.cellVal(currSheet, row_index, col+1)
+                cellValue = Util.cellVal(currSheet, row_index, col)
+                try:
+                    cellValue = Util.getCastedValue(cellValue,column.fieldType)
+                except Exception , e:
+                    print (str(e))
+                    print "exception in sheet %s in row =%i col=%i " % (currSheet.name,row_index,col)
+                    raise Exception("exception %s  %s sheet in row =%i col=%i " % (str(e), currSheet.name,row_index,col))
                 
-                cellValue = Util.getCastedValue(cellValue,column.fieldType)
                 if(cellValue):
                     currRow[column.fieldName] = cellValue 
+                
                 col = col + 1
-        
         
         jsonForKey = Util.dictToJson(dataDict)
         key = Util.getSh1OfStr(jsonForKey)
